@@ -6,9 +6,19 @@ $(document).ready(function() {
     oscillator = context.createOscillator();
 
     var keycode_one = 65; //a
-    var keycode_two = 83; //s
+    var keycode_two = 87; //w
     var keycode_three = 68; //d
-    var keycode_four = 70; //f
+    var keycode_four = 82; //r
+    var keycode_five = 82; //g
+    var keycode_six = 82; //h
+    var keycode_seven = 82; //u
+    var keycode_eight = 82; //k
+    var keycode_nine = 82; //r
+    var keycode_ten = 82; //r
+    var keycode_eleven = 82; //r
+    var keycode_twelve = 82; //r
+    var keycode_thirteen = 82; //r
+
 
     average = 0;
 
