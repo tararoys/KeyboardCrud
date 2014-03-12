@@ -14,25 +14,25 @@ $(document).ready(function() {
 
     $(document).on("keydown", function(event) {
         if (event.keyCode == keycode_one) {
-            playNote("oscillator_one", "pitch_slider_one", "wave_one", keycode_one);
+            playNote("C", "pitch_slider_one", "wave_one", keycode_one);
         } else if (event.keyCode == keycode_two) {
-            playNote("oscillator_two", "pitch_slider_two", "wave_two", keycode_two);
+            playNote("C#", "pitch_slider_two", "wave_two", keycode_two);
         } else if (event.keyCode == keycode_three) {
-            playNote("oscillator_three", "pitch_slider_three", "wave_three", keycode_three);
+            playNote("D", "pitch_slider_three", "wave_three", keycode_three);
         } else if (event.keyCode == keycode_four) {
-            playNote("oscillator_four", "pitch_slider_four", "wave_four", keycode_four);
+            playNote("D#", "pitch_slider_four", "wave_four", keycode_four);
         }
     });
 
     $(document).on("keyup", function(event) {
         if (event.keyCode == keycode_one) {
-            stopNote("oscillator_one");
+            stopNote("C");
         } else if (event.keyCode == keycode_two) {
-            stopNote("oscillator_two");
+            stopNote("C#");
         } else if (event.keyCode == keycode_three) {
-            stopNote("oscillator_three");
+            stopNote("D");
         } else if (event.keyCode == keycode_four) {
-            stopNote("oscillator_four");
+            stopNote("D#");
         }
 
     });
@@ -40,7 +40,6 @@ $(document).ready(function() {
     var playNote = function(oscillator_id, frequency_id, wave_type_id, keycode_id) {
 
         var osc = document.getElementById(oscillator_id)
-        console.log(osc);
         var oscPitch = document.getElementById(frequency_id).value;
         $(osc).addClass('cool-border');
         oscillator.type = parseInt(document.getElementById(wave_type_id).value);
