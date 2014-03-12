@@ -16,8 +16,8 @@ $(document).ready(function() {
     var keycode_nine = 73; //i
     var keycode_ten = 76; //l
     var keycode_eleven = 80; //p
-    var keycode_twelve = 222; //2
-    var keycode_thirteen = 82; //r
+    var keycode_twelve = 222; //''
+    var keycode_thirteen = 13; //enter
 
 
     average = 0;
