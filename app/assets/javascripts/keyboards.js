@@ -26,7 +26,6 @@ $(document).ready(function() {
     average = 0;
 
     $(document).on("keydown", function(event) {
-        console.log("here");
         if (event.keyCode == keycode_one) {
             playNote("1", "pitch_slider_1", "wave_1", keycode_one);
         } else if (event.keyCode == keycode_two) {
@@ -96,9 +95,9 @@ $(document).ready(function() {
         oscillators[index].frequency.value = oscPitch;
         console.log(oscPitch);
         frequency_array.push(parseInt(oscPitch));
-        oscillator[index].connect(context.destination);
+        oscillators[index].connect(context.destination);
 
-        oscillator.noteOn(0);
+        oscillators[index].noteOn(0);
     }
 
     var calculateAverage = function(array) {
@@ -114,6 +113,7 @@ $(document).ready(function() {
         var osc = document.getElementById(oscillator_id)
         $(osc).removeClass('cool-border');
         oscillators[index].disconnect();
+        // oscillators[index].noteOff(0);
         average = Math.floor(calculateAverage(frequency_array));
         $('#average_frequency').html(average + "Hz ");
     }
