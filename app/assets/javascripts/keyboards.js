@@ -32,23 +32,23 @@ $(document).ready(function() {
         } else if (event.keyCode == keycode_four) {
             playNote("D#", "pitch_slider_four", "wave_four", keycode_four);
         } else if (event.keyCode == keycode_five) {
-            playNote("E", "pitch_slider_two", "wave_two", keycode_two);
+            playNote("E", "pitch_slider_five", "wave_five", keycode_five);
         } else if (event.keyCode == keycode_six) {
-            playNote("F", "pitch_slider_two", "wave_two", keycode_two);
+            playNote("F", "pitch_slider_six", "wave_six", keycode_six);
         } else if (event.keyCode == keycode_seven) {
-            playNote("F#", "pitch_slider_two", "wave_two", keycode_two);
+            playNote("F#", "pitch_slider_seven", "wave_seven", keycode_seven);
         } else if (event.keyCode == keycode_eight) {
-            playNote("G", "pitch_slider_two", "wave_two", keycode_two);
+            playNote("G", "pitch_slider_eight", "wave_eight", keycode_eight);
         } else if (event.keyCode == keycode_nine) {
-            playNote("G#", "pitch_slider_two", "wave_two", keycode_two);
+            playNote("G#", "pitch_slider_nine", "wave_nine", keycode_nine);
         } else if (event.keyCode == keycode_ten) {
-            playNote("C#", "pitch_slider_two", "wave_two", keycode_two);
+            playNote("A", "pitch_slider_ten", "wave_ten", keycode_eleven);
         } else if (event.keyCode == keycode_eleven) {
-            playNote("C#", "pitch_slider_two", "wave_two", keycode_two);
+            playNote("A#", "pitch_slider_eleven", "wave_eleven", keycode_twelve);
         } else if (event.keyCode == keycode_twelve) {
-            playNote("C#", "pitch_slider_two", "wave_two", keycode_two);
+            playNote("B", "pitch_slider_twelve", "wave_twelve", keycode_thirteen);
         } else if (event.keyCode == keycode_thirteen) {
-            playNote("C#", "pitch_slider_two", "wave_two", keycode_two);
+            playNote("C", "pitch_slider_thirteen", "wave_thirteen", keycode_fourteen);
         }
     });
 
@@ -61,8 +61,25 @@ $(document).ready(function() {
             stopNote("D");
         } else if (event.keyCode == keycode_four) {
             stopNote("D#");
+        } else if (event.keyCode == keycode_five) {
+            stopNote("D#");
+        } else if (event.keyCode == keycode_six) {
+            stopNote("D#");
+        } else if (event.keyCode == keycode_seven) {
+            stopNote("D#");
+        } else if (event.keyCode == keycode_eight) {
+            stopNote("D#");
+        } else if (event.keyCode == keycode_nine) {
+            stopNote("D#");
+        } else if (event.keyCode == keycode_ten) {
+            stopNote("D#");
+        } else if (event.keyCode == keycode_eleven) {
+            stopNote("D#");
+        } else if (event.keyCode == keycode_twelve) {
+            stopNote("D#");
+        } else if (event.keyCode == keycode_thirteen) {
+            stopNote("D#");
         }
-
     });
 
     var playNote = function(oscillator_id, frequency_id, wave_type_id, keycode_id) {
