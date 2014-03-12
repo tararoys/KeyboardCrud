@@ -1,4 +1,30 @@
-# Git: Working with Teams
+#My Keyboards: Play your customized keyboards!
+
+Did you ever want to play a jam with your computer keyboard?  This is the app for you!
+
+1. Go to our page. You'll see a piano keyboard.
+2. Start typing on the home row.  Listen to the beautiful music!
+3. Don't like what you hear? Start customizing the keyboard!
+
+#Team goals: 
+1. Tara: I want to spend 10% of our time on setting up a process and 90% of our time learning
+2. Jay: I want to build something fun with music. 
+
+3. How do we set up a process that people can contribute to when they have 2 hours of energy per day? (i.e. most of us are sick.)
+
+Solution: 
+Jay: We'll build a music app.
+Tara: We'll pick an Agile process and follow it religiously so that we can think about coding instead of process. 
+
+#Process stuff
+
+1. We are following the Xtreme Programming Agile Methedology.
+    1. We are using hipchat
+    2. Devs at DBC, look at our whiteboard. 
+    3. Remote Devs, look at our Trello. 
+2. [We are using a pull request workflow](https://github.com/jayrogers889csa/my_keyboards#git-working-with-teams) 
+
+#Git: Working with Teams
 
 Git is a distributed version control system. Every Git working directory is a full-fledged repository with complete history and full version tracking capabilities, not dependent on network access or a central server.
 
