@@ -1,3 +1,12 @@
+#My Keyboards: Play your customized keyboards!
+
+Did you ever want to play a jam with your computer keyboard?  This is the app for you!
+
+1. Go to our page. You'll see a piano keyboard.
+2. Start typing on the home row.  Listen to the beautiful music!
+3. Don't like what you hear? Start customizing the keyboard!
+
+
 # Git: Working with Teams
 
 Git is a distributed version control system. Every Git working directory is a full-fledged repository with complete history and full version tracking capabilities, not dependent on network access or a central server.
