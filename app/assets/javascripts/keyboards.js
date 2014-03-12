@@ -3,7 +3,11 @@ $(document).ready(function() {
 
     frequency_array = new Array();
 
-    oscillator = context.createOscillator();
+    oscillators = new Array();
+
+    for (var i = 1; i <= 13; i++) {
+      oscillators.push(context.createOscillator());
+    }
 
     var keycode_one = 16; //shift
     var keycode_two = 81; //q
@@ -16,82 +20,83 @@ $(document).ready(function() {
     var keycode_nine = 73; //i
     var keycode_ten = 76; //l
     var keycode_eleven = 80; //p
-    var keycode_twelve = 222; //''
-    var keycode_thirteen = 13; //enter
-
+    var keycode_twelve = 222; //'
+    var keycode_thirteen = 221; //]
 
     average = 0;
 
     $(document).on("keydown", function(event) {
+        console.log("here");
         if (event.keyCode == keycode_one) {
-            playNote("C", "pitch_slider_one", "wave_one", keycode_one);
+            playNote("1", "pitch_slider_1", "wave_1", keycode_one);
         } else if (event.keyCode == keycode_two) {
-            playNote("C#", "pitch_slider_two", "wave_two", keycode_two);
+            playNote("2", "pitch_slider_2", "wave_2", keycode_two);
         } else if (event.keyCode == keycode_three) {
-            playNote("D", "pitch_slider_three", "wave_three", keycode_three);
+            playNote("3", "pitch_slider_3", "wave_3", keycode_three);
         } else if (event.keyCode == keycode_four) {
-            playNote("D#", "pitch_slider_four", "wave_four", keycode_four);
+            playNote("4", "pitch_slider_4", "wave_4", keycode_four);
         } else if (event.keyCode == keycode_five) {
-            playNote("E", "pitch_slider_five", "wave_five", keycode_five);
+            playNote("5", "pitch_slider_5", "wave_5", keycode_five);
         } else if (event.keyCode == keycode_six) {
-            playNote("F", "pitch_slider_six", "wave_six", keycode_six);
+            playNote("6", "pitch_slider_6", "wave_6", keycode_six);
         } else if (event.keyCode == keycode_seven) {
-            playNote("F#", "pitch_slider_seven", "wave_seven", keycode_seven);
+            playNote("7", "pitch_slider_7", "wave_7", keycode_seven);
         } else if (event.keyCode == keycode_eight) {
-            playNote("G", "pitch_slider_eight", "wave_eight", keycode_eight);
+            playNote("8", "pitch_slider_8", "wave_8", keycode_eight);
         } else if (event.keyCode == keycode_nine) {
-            playNote("G#", "pitch_slider_nine", "wave_nine", keycode_nine);
+            playNote("9", "pitch_slider_9", "wave_9", keycode_nine);
         } else if (event.keyCode == keycode_ten) {
-            playNote("A", "pitch_slider_ten", "wave_ten", keycode_eleven);
+            playNote("10", "pitch_slider_10", "wave_10", keycode_ten);
         } else if (event.keyCode == keycode_eleven) {
-            playNote("A#", "pitch_slider_eleven", "wave_eleven", keycode_twelve);
+            playNote("11", "pitch_slider_11", "wave_11", keycode_eleven);
         } else if (event.keyCode == keycode_twelve) {
-            playNote("B", "pitch_slider_twelve", "wave_twelve", keycode_thirteen);
+            playNote("12", "pitch_slider_12", "wave_12", keycode_twelve);
         } else if (event.keyCode == keycode_thirteen) {
-            playNote("C", "pitch_slider_thirteen", "wave_thirteen", keycode_fourteen);
+            playNote("13", "pitch_slider_13", "wave_13", keycode_thirteen);
         }
     });
 
     $(document).on("keyup", function(event) {
         if (event.keyCode == keycode_one) {
-            stopNote("C");
+            stopNote("1");
         } else if (event.keyCode == keycode_two) {
-            stopNote("C#");
+            stopNote("2");
         } else if (event.keyCode == keycode_three) {
-            stopNote("D");
+            stopNote("3");
         } else if (event.keyCode == keycode_four) {
-            stopNote("D#");
+            stopNote("4");
         } else if (event.keyCode == keycode_five) {
-            stopNote("D#");
+            stopNote("5");
         } else if (event.keyCode == keycode_six) {
-            stopNote("D#");
+            stopNote("6");
         } else if (event.keyCode == keycode_seven) {
-            stopNote("D#");
+            stopNote("7");
         } else if (event.keyCode == keycode_eight) {
-            stopNote("D#");
+            stopNote("8");
         } else if (event.keyCode == keycode_nine) {
-            stopNote("D#");
+            stopNote("9");
         } else if (event.keyCode == keycode_ten) {
-            stopNote("D#");
+            stopNote("10");
         } else if (event.keyCode == keycode_eleven) {
-            stopNote("D#");
+            stopNote("11");
         } else if (event.keyCode == keycode_twelve) {
-            stopNote("D#");
+            stopNote("12");
         } else if (event.keyCode == keycode_thirteen) {
-            stopNote("D#");
+            stopNote("13");
         }
     });
 
     var playNote = function(oscillator_id, frequency_id, wave_type_id, keycode_id) {
 
+        var index = parseInt(oscillator_id)
         var osc = document.getElementById(oscillator_id)
         var oscPitch = document.getElementById(frequency_id).value;
         $(osc).addClass('cool-border');
-        oscillator.type = parseInt(document.getElementById(wave_type_id).value);
-        oscillator.frequency.value = oscPitch;
+        oscillators[index].type = parseInt(document.getElementById(wave_type_id).value);
+        oscillators[index].frequency.value = oscPitch;
         console.log(oscPitch);
         frequency_array.push(parseInt(oscPitch));
-        oscillator.connect(context.destination);
+        oscillator[index].connect(context.destination);
 
         oscillator.noteOn(0);
     }
@@ -105,9 +110,10 @@ $(document).ready(function() {
     }
 
     var stopNote = function(oscillator_id) {
+        var index = parseInt(oscillator_id)
         var osc = document.getElementById(oscillator_id)
         $(osc).removeClass('cool-border');
-        oscillator.disconnect();
+        oscillators[index].disconnect();
         average = Math.floor(calculateAverage(frequency_array));
         $('#average_frequency').html(average + "Hz ");
     }
@@ -115,4 +121,5 @@ $(document).ready(function() {
     var findOsc = function(oscillator_id) {
         var osc = document.getElementById(oscillator_id)
     }
+
 });
