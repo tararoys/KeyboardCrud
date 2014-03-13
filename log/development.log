@@ -4093,3 +4093,75 @@ Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-03-12 19:20:22 -05
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-12 19:20:22 -0500
+
+
+Started GET "/keyboards" for 127.0.0.1 at 2014-03-13 09:26:23 -0500
+Processing by KeyboardsController#index as HTML
+  Rendered keyboards/_low_c_keyboard.html.erb (1.6ms)
+  Rendered keyboards/_low_c_keyboard.html.erb (0.1ms)
+  Rendered keyboards/_middle_c_keyboard.html.erb (1.6ms)
+  Rendered keyboards/index.html.erb within layouts/application (15.7ms)
+Completed 200 OK in 187ms (Views: 133.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-13 09:26:24 -0500
+
+
+Started GET "/assets/keyboards.css?body=1" for 127.0.0.1 at 2014-03-13 09:26:24 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-03-13 09:26:24 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-13 09:26:24 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-13 09:26:24 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-13 09:26:24 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-03-13 09:26:24 -0500
+
+
+Started GET "/assets/keyboards.js?body=1" for 127.0.0.1 at 2014-03-13 09:26:24 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-13 09:26:24 -0500
+
+
+Started GET "/keyboards" for 127.0.0.1 at 2014-03-13 09:27:15 -0500
+Processing by KeyboardsController#index as HTML
+  Rendered keyboards/_low_c_keyboard.html.erb (0.0ms)
+  Rendered keyboards/_low_c_keyboard.html.erb (0.0ms)
+  Rendered keyboards/_middle_c_keyboard.html.erb (0.0ms)
+  Rendered keyboards/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 40ms (Views: 38.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-13 09:27:15 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-13 09:27:15 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-13 09:27:15 -0500
+
+
+Started GET "/assets/keyboards.js?body=1" for 127.0.0.1 at 2014-03-13 09:27:15 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-03-13 09:27:15 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-13 09:27:15 -0500
+
+
+Started GET "/assets/keyboards.css?body=1" for 127.0.0.1 at 2014-03-13 09:27:15 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-03-13 09:27:15 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-13 09:27:15 -0500
