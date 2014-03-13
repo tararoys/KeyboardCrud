@@ -122,4 +122,13 @@ $(document).ready(function() {
         var osc = document.getElementById(oscillator_id)
     }
 
+    // var selected = $('#keyboard_selector').find(":selected").val();
+    // if (selected === "0") {
+    //   $('#keyboard_render').html("<%= render 'low_c_keyboard' %>");
+    // }
+    // else if (selected === "1") {
+    //   $('#keyboard_render').html("<%= render 'middle_c_keyboard' %>");
+    // }
+
+
 });

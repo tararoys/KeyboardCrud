@@ -22,3 +22,11 @@ div {
 .cool-border {
   box-shadow: 2px 2px 4px rgba(129, 174, 233, 174);
 }
+
+.display {
+
+}
+
+.no_display {
+  display: none;
+}
