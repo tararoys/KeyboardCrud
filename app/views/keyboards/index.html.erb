@@ -1,3 +1,30 @@
-<h1>hey</h1>
+<select id="keyboard_selector" name="wave_type" form="wave">
+  <option value="0">Low C</option>
+  <option value="1">Middle C</option>
+  <!-- <option value="2">Sawtooth</option>
+  <option value="3">Triangle</option> -->
+</select>
 
-<%= render 'keyboard' %>
+<div id="keyboard_render">
+
+
+
+</div>
+
+
+<script type="text/javascript">
+  var selected = $('#keyboard_selector').find(":selected").val();
+  if (selected === "0") {
+    $('#keyboard_render').html("<%= render 'low_c_keyboard' %>");
+  }
+  else if (selected === "1") {
+    $('#keyboard_render').html("<%= render 'middle_c_keyboard' %>");
+  }
+
+ #make ajax request to get page from server and html that instead of a partial
+  var url =
+  $.get(url, data)
+
+  #keyboard_render.html(serverResponse)
+
+</script>
