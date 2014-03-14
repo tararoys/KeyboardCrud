@@ -1,52 +1,53 @@
-$(document).ready(function() {
+function Keys(keycode)
+{
+    this.oscillator = context.createOscillator();
+    this.panners = context.createPanner();
+    this.delays = context.createDelayNode();
+    this.filters = context.createBiquadFilter();
+    this.volumes = context.createGainNode();
+    this.keycode = keycode;
+    this.frequency =
+    this.keyBeingPlayed = false;
+}
 
-    context = new webkitAudioContext();
+Keys.prototype.isKeyPressed = function()
+{
+
+}
+
+$(document).ready(function()
+{
+    var context = new webkitAudioContext();
 
     frequency_array = new Array();
-
-    oscillators = new Array();
-    panners = new Array();
-    delays = new Array();
-    filters = new Array();
-    volumes = new Array();
-
-    for (var i = 1; i <= 13; i++) {
-      oscillators.push(context.createOscillator());
-    }
-    for (var i = 1; i <= 13; i++) {
-      panners.push(context.createPanner());
-    }
-    for (var i = 1; i <= 13; i++) {
-      delays.push(context.createDelayNode());
-    }
-    for (var i = 1; i <= 13; i++) {
-      filters.push(context.createBiquadFilter());
-    }
-    for (var i = 1; i <= 13; i++) {
-      volumes.push(context.createGainNode());
-    }
-    //keep track of what keys are pressed and prevent spam keydown
     var keycode_flag = 0;
 
-    var keycode_array = new Array;
-    keycode_array["one"]      = 16; //shift
-    keycode_array["two"]      = 81; //q
-    keycode_array["three"]    = 83; //s
-    keycode_array["four"]     = 69; //e
-    keycode_array["five"]     = 70; //f
-    keycode_array["six"]      = 71; //g
-    keycode_array["seven"]    = 89; //y
-    keycode_array["eight"]    = 74; //j
-    keycode_array["nine"]     = 73; //i
-    keycode_array["ten"]      = 76; //l
-    keycode_array["eleven"]   = 80; //p
-    keycode_array["twelve"]   = 222;//'
-    keycode_array["thirteen"] = 221;//]
-
+    var NumOfKeys = 13; //$('.keyboard').length
+    var keys = new Array(NumOfKeyboards);
+    keys.push(new Keyboard(16));//shift
+    keys.push(new Keyboard(81));//q
+    keys.push(new Keyboard(83));//s
+    keys.push(new Keyboard(69));//e
+    keys.push(new Keyboard(70));//f
+    keys.push(new Keyboard(71));//g
+    keys.push(new Keyboard(89));//y
+    keys.push(new Keyboard(74));//j
+    keys.push(new Keyboard(73));//i
+    keys.push(new Keyboard(76));//l
+    keys.push(new Keyboard(80));//p
+    keys.push(new Keyboard(222);//'
+    keys.push(new Keyboard(221));//]
     average = 0;
 
     $(document).on("keydown", function(event) {
-        // console.log("here");
+        for (var i = 0; i < keys.length; i++)
+        {
+            if keys[i].isKeyPressed(event.keyCode)
+            {
+
+            }
+        }
+
         if (event.keyCode == keycode_array["one"]  && !(keycode_flag & 4096)) {
             keycode_flag |= 4096;
             playNote("1", "frequency_1", "wave_1", "panner_1", "delay_1", "filter_1", "volume_1", event.keyCode);
