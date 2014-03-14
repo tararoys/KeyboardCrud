@@ -11,10 +11,31 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140314153027) do
+ActiveRecord::Schema.define(version: 20140314155358) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "keyboards", force: true do |t|
+    t.integer  "user_id"
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "keys", force: true do |t|
+    t.integer  "keyboard_id"
+    t.integer  "oscillator"
+    t.string   "frequency"
+    t.integer  "wave"
+    t.integer  "panner"
+    t.integer  "delay"
+    t.integer  "filter"
+    t.integer  "volume"
+    t.integer  "key_code"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "users", force: true do |t|
     t.string   "email",                  default: "", null: false

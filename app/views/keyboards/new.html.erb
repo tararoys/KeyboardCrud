@@ -1,3 +1,9 @@
 <h1>Add a keyboard</h1>
 
 <%= render "keyboards/form" %>
+
+<%= form_for @keyboard do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  <%= f.submit %> 
+<% end %>
