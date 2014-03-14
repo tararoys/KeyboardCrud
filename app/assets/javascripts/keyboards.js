@@ -31,8 +31,6 @@ Key.prototype.isKeyPlaying = function()
 
 Key.prototype.playNote = function()
 {
-    this.keyBeingPlayed = true;
-
     var osc = document.getElementById(this.html_id);
     $(osc).addClass('cool-border');
 
@@ -50,7 +48,9 @@ Key.prototype.playNote = function()
     this.filter.connect(this.volume);
     this.volume.connect(context.destination);
 
-    this.oscillator.noteOn(0);
+    if (this.keyBeingPlayed != true)
+        this.oscillator.noteOn(0);
+    this.keyBeingPlayed = true;
 }
 
 Key.prototype.stopNote = function()
@@ -68,21 +68,28 @@ var context = new webkitAudioContext();
 $(document).ready(function()
 {
     var keys = [
-    new Key(16, 1),//shift
-    new Key(81, 2),//q
-    new Key(83, 3),//s
-    new Key(69, 4),//e
-    new Key(70, 5),//f
-    new Key(71, 6),//g
-    new Key(89, 7),//y
-    new Key(74, 8),//j
-    new Key(73, 9),//i
-    new Key(76, 10),//l
-    new Key(80, 11),//p
-    new Key(222, 12),//'
-    new Key(221, 13)//]
+        new Key(16, 1),//shift
+        new Key(81, 2),//q
+        new Key(83, 3),//s
+        new Key(69, 4),//e
+        new Key(70, 5),//f
+        new Key(71, 6),//g
+        new Key(89, 7),//y
+        new Key(74, 8),//j
+        new Key(73, 9),//i
+        new Key(76, 10),//l
+        new Key(80, 11),//p
+        new Key(222, 12),//'
+        new Key(221, 13)//]
     ]
 
+    setInterval(function(){
+        for (var i = 0; i < keys.length; i++)
+        {
+            if (keys[i].isKeyPlaying())
+                keys[i].playNote();
+        }
+    }, 200);
 
     $(document).on("keydown", function(event)
     {
