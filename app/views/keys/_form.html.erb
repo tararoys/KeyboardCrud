@@ -1,0 +1,66 @@
+<% if @errors %>
+  <%= @errors %>
+<% end %>
+
+<%= form_for [@keyboard, @key] do |f| %>
+  <div id="frequency">Frequeny: <span></span>
+    <%= f.range_field :frequency, {min: "50", max: "5000", step: "0.1", id: "freq"}%>
+  </div>
+
+  <div id="wave-type">Wave Type:
+    <%= f.select :wave, ["sine", "square", "sawtooth", "triangle"] %>
+  </div>
+
+  <div id="panner">Panner: <span></span>
+    <%= f.range_field :panner, {min: "-3", max: "3", step: "0.01", id: "pan"} %>
+  </div>
+
+  <div id="delay">Delay: <span></span>
+    <%= f.range_field :delay, {min: "0", max: "1", step: "0.01", id: "d-lay"} %>
+  </div>
+
+  <div id="note_filter">Filter: <span></span>
+    <%= f.range_field :note_filter, {min: "-4800", max: "4800", step: "0.01", id: "fil"} %>
+  </div>
+
+  <div id="volume">Volume: <span></span>
+    <%= f.range_field :volume, {min: "0", max: "1", step: "0.1", id: "vol"} %>
+  </div>
+
+  <div id="key-code">
+    <%= f.label :key_code %>
+    <%= f.select :key_code, [["A", 65], ["S", 83], ["D", 68], ["F", 70], ["J", 74], ["K", 75], ["L", 76], [";", 186]] %>
+  </div>
+
+  <div>
+    <%= f.submit %>
+  </div>
+<% end %>
+
+<script>
+
+  $("#freq").on("click", function(){
+    var freq = $(this).val();
+    $("#frequency span").html(freq);
+  })
+
+  $("#pan").on("click", function(){
+    var panner = $(this).val();
+    $("#panner span").html(panner);
+  })
+
+  $("#d-lay").on("click", function(){
+    var delay = $(this).val();
+    $("#delay span").html(delay);
+  })
+
+  $("#fil").on("click", function(){
+    var filter = $(this).val();
+    $("#note_filter span").html(filter);
+  })
+
+  $("#vol").on("click", function(){
+    var volume = $(this).val();
+    $("#volume span").html(volume);
+  })
+</script>

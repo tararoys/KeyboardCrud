@@ -1,6 +1,7 @@
 class KeyboardsController < ApplicationController
 
   def index
+    @keyboard = Keyboard.find(params[:id])
   end
 
   def new

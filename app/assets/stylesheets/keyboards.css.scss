@@ -1,21 +1,36 @@
 // Place all the styles related to the keyboards controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+/*
+div {
+  width: 30px;
+  height:30px;
+  background: blue;
+  border: 2px solid black;
+}
 
-// div {
-//   width: 30px;
-//   height:30px;
-//   background: blue;
-//   border: 2px solid black;
-// }
+.whitekey {
+   background: white;
+   color: black
+}
 
-// .whitekey {
-//    background: white;
-//    color: black
-// }
+.blackkey {
+   background: black;
+   color: white
+}
 
-// .blackkey {
-//    background: black;
-//    color: white
-// }
+.cool-border {
+  box-shadow: 2px 2px 4px rgba(129, 174, 233, 174);
+}
 
+.display {
+
+}
+
+.no_display {
+  display: none;
+}*/
+
+.key {
+  margin: 1em auto;
+}

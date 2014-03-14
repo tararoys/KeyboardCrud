@@ -25,12 +25,11 @@ ActiveRecord::Schema.define(version: 20140314155358) do
 
   create_table "keys", force: true do |t|
     t.integer  "keyboard_id"
-    t.integer  "oscillator"
-    t.string   "frequency"
+    t.integer  "frequency"
     t.integer  "wave"
     t.integer  "panner"
     t.integer  "delay"
-    t.integer  "filter"
+    t.integer  "note_filter"
     t.integer  "volume"
     t.integer  "key_code"
     t.datetime "created_at"

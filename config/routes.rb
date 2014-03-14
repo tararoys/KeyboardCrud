@@ -1,5 +1,7 @@
 MyKeyboards::Application.routes.draw do
-  resources :keyboards
+  resources :keyboards do
+    resources :keys
+  end
 
   root "welcome#index"
 
