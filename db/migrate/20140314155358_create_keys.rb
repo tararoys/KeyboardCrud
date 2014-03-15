@@ -3,7 +3,7 @@ class CreateKeys < ActiveRecord::Migration
     create_table :keys do |t|
       t.integer :keyboard_id
       t.integer :frequency
-      t.string :wave
+      t.string  :wave
       t.integer :panner
       t.integer :delay
       t.integer :note_filter

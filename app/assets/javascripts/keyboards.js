@@ -1,7 +1,8 @@
-var Key = function(keyCode, frequency){
+var Key = function(keyCode, frequency, volume){
     this.isBeingPlayed = false;
-    this.frequency = frequency
+    this.frequency = frequency;
     this.keyCode = keyCode;
+    this.volume = volume;
 } 
 
 Key.prototype.startPlayingNote = function() {
@@ -9,9 +10,16 @@ Key.prototype.startPlayingNote = function() {
     var sine = 0;
     this.oscillator.type = sine;
     this.oscillator.frequency.value = this.frequency;
-    this.oscillator.connect(context.destination);
+    
+    this.amplifier = context.createGainNode();
+    this.amplifier.gain.value = this.volume;
+    
+    
+    this.oscillator.connect(this.amplifier);
+    this.amplifier.connect(context.destination);
     this.oscillator.noteOn(0);
     this.isBeingPlayed = true;
+    
 }
 
 Key.prototype.stopPlayingNote = function(){
@@ -28,7 +36,7 @@ var keyboard = {
             var keycode = parseInt(keycode_span.text());
             var frequency_span = $(this).find("div[id^='freq'] p > span");
             var frequency = parseInt(frequency_span.text());
-            mykeys[keycode] = new Key(keycode, frequency) ;
+            mykeys[keycode] = new Key(keycode, frequency, 0.5) ;
         });
     },
     hasKey: function(keyCode){
