@@ -49,7 +49,20 @@ describe Key do
       key = Key.new(key_code: 32)
       expect(key.key_code).to eq ( 32 )
     end
+  end
 
+  context "validations" do
+   it "test that frequency, wave, panner, delay, note_filter, volume, and keycode are is present. TEST ALL THE THINGS!" do 
+      key = Key.create();
+      expect(key.errors[:frequency][0]).to eq("can't be blank");
+      expect(key.errors[:wave][0]).to eq("can't be blank");
+      expect(key.errors[:panner][0]).to eq("can't be blank");
+      expect(key.errors[:delay][0]).to eq("can't be blank");
+      expect(key.errors[:note_filter][0]).to eq("can't be blank");
+      expect(key.errors[:volume][0]).to eq("can't be blank");
+      expect(key.errors[:key_code][0]).to eq("can't be blank");
+    end 
   end
 end
+
 
