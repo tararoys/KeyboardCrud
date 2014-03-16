@@ -30,7 +30,7 @@ ActiveRecord::Schema.define(version: 20140314155358) do
     t.integer  "panner"
     t.integer  "delay"
     t.integer  "note_filter"
-    t.integer  "volume"
+    t.float    "volume"
     t.integer  "key_code"
     t.datetime "created_at"
     t.datetime "updated_at"

@@ -7,7 +7,7 @@ class CreateKeys < ActiveRecord::Migration
       t.integer :panner
       t.integer :delay
       t.integer :note_filter
-      t.integer :volume
+      t.float   :volume
       t.integer :key_code
 
       t.timestamps

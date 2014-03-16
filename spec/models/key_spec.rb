@@ -40,6 +40,11 @@ describe Key do
 
     it "need to find out what a note_filter is and why it is stored as an integer"
 
+    it "has a volume" do 
+      key = Key.new(volume: 0.5)
+      expect(key.volume).to eq ( 0.5 )
+    end
+
   end
 end
 
