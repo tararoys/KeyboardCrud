@@ -72,6 +72,20 @@ describe Key do
       expect(earsplitting.valid?).to eq(false)
       expect(too_low.valid?).to eq(false)
     end 
+
+    it "wave is an integer between 0 and 4 inclusive" do 
+      sine = Key.create(frequency: 261.626, wave: 0, panner: -3, delay: 0.1, note_filter: -1000.00, volume: 0.5, key_code: 62)
+      out_of_range_high = Key.create(frequency: 5200.00, wave: 5, panner: -3, delay: 0.1, note_filter: -1000.00, volume: 0.5, key_code: 63)
+      out_of_range_low = Key.create(frequency: 261.626, wave: -1, panner: -3, delay: 0.1, note_filter: -1000.00, volume: 0.5, key_code: 62)  
+      float_is_wrong = Key.create(frequency: 5200.00, wave: 1.5, panner: -3, delay: 0.1, note_filter: -1000.00, volume: 0.5, key_code: 63)
+      string_is_wrong = Key.create(frequency: 5200.00, wave: "0", panner: -3, delay: 0.1, note_filter: -1000.00, volume: 0.5, key_code: 63)
+      
+      expect(sine.valid?).to eq(true);
+      expect(out_of_range_high.valid?).to eq(false);
+      expect(out_of_range_low.valid?).to eq(false);
+      expect(float_is_wrong.valid?).to eq(false);
+      expect(string_is_wrong.valid?).to eq(false);
+    end
   end
 end
 
