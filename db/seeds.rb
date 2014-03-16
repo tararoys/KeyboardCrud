@@ -6,8 +6,9 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 #   
- 
-keyboard = Keyboard.create(name: "Middle_C_Keyboard")
+
+user = User.create(email:"user@user.com",password: "password", password_confirmation: "password")
+keyboard = Keyboard.create(user_id: user.id, name: "Middle C Keyboard")
 
 keyCode = {
   a: 65,
@@ -55,7 +56,7 @@ keyboard.keys << a_sharp
 keyboard.keys << middle_b
 keyboard.keys << tenor_c 
 
-wild = Keyboard.create(name: "Wild_Keyboard")
+wild = Keyboard.create(user_id: user.id, name: "Wild_Keyboard")
 
 wild_middle_c = Key.create(frequency: 261.626, wave: 1, panner: -3, delay: 0.1, note_filter: -1000.00, volume: 0.5, key_code: keyCode[:a])
 wild_c_sharp  = Key.create(frequency: 277.183, wave: 1, panner: -3, delay: 0.1, note_filter: -1000.00, volume: 0.5, key_code: keyCode[:w])

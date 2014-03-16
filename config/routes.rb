@@ -3,14 +3,19 @@ MyKeyboards::Application.routes.draw do
   devise_for :users
 
   resources :users do
-    resources :keyboards
+    resources :keyboards do
+      resources :keys
+    end
   end
 
-  resources :keyboards do
-    resources :keys
-  end
 
+  post '/users/:user_id/keyboards/:keyboard_id/keys/:id/edit', to: 'keys#update'
+  get '/users/:user_id/keyboards/:keyboard_id/keys/:id/destroy', to: 'keys#destroy'
+  post '/users/:user_id/keyboards/:keyboard_id/keys/new', to: 'keys#create'
+  post 'users/:user_id/keyboards/new', to: 'keyboards#create'
   root "welcome#index"
+
+
 
 
 

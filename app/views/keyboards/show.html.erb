@@ -1,38 +1,15 @@
-<h1><%= @keyboard.name %></h1>
+<h2><%= @keyboard.name %></h2>
 
-<%= link_to "Add a key", new_keyboard_key_path(@keyboard) %>
-
+<p><%= link_to "Add key", new_user_keyboard_key_path(@owner, @keyboard) %></p>
 <div class="row">
-	<% @keyboard.keys.each_with_index do |k, index| %>
-	  <div class="col-xs-12 col-md-3 key">
-	  	<div>Key <%= index + 1 %></div>
-		  <div id="freq-<%= index %>">
-		  	<p>Frequency: <span><%= k.frequency %></span></p>
-		  </div>
+	<ul id="keyboard">
+	<% @keys.each_with_index do |k, index| %>
+		<li class="key"><%= render partial: "keys/show", locals: {k: k, index: index} %>
+      <p><%= link_to "Edit key", edit_user_keyboard_key_path(@owner, @keyboard, k) %></p>
+      <p><a href="/users/<%= @owner.id %>/keyboards/<%= @keyboard.id %>/keys/<%= k.id %>/destroy">Delete Key</a></p>
 
-		  <div id="wave-<%= index %>">
-		  	<p>Wave: <span><%= k.wave %></span><p>
-		  </div>
-
-		  <div id="panner-<%= index %>">
-		  	<p>Panner: <span><%= k.panner %></span><p>
-		  </div>
-
-		  <div id="delay-<%= index %>">
-		  	<p>Delay: <span><%= k.delay %></span><p>
-		  </div>
-
-		  <div id="filter-<%= index %>">
-		  	<p>Filter: <span><%= k.note_filter %></span><p>
-		  </div>
-
-		  <div id="volume-<%= index %>">
-		  	<p>Volume: <span><%= k.volume %></span><p>
-		  </div>
-
-		  <div id="keycode-<%= index %>">
-		  	<p>Key Code: <span><%= k.key_code %></span><p>
-		  </div>
-		</div>
+    </li>
 	<% end %>
+</ul>
 </div>
+
