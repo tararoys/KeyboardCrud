@@ -1,0 +1,8 @@
+<h2><%= @keyboard.name %></h2>
+<div class="row">
+  <ul id="keyboard">
+  <% @keys.each do |k| %>
+    <li class="key"><%= render partial: "keys/edit", locals: {:key => k, key: k} %></li>
+  <% end %>
+</ul>
+</div>

@@ -6,8 +6,9 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 #   
- 
-keyboard = Keyboard.create(name: "Middle_C_Keyboard")
+
+user = User.create(email:"user@user.com",password: "password", password_confirmation: "password")
+keyboard = Keyboard.create(user_id: 1, name: "Middle C Keyboard")
 
 keyCode = {
   a: 65,
