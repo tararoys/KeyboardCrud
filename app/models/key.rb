@@ -6,5 +6,6 @@ class Key < ActiveRecord::Base
   validates :wave, inclusion: { in: [0, 1, 2, 3], message: "%{value} is not a valid size" }
   validates :panner, numericality: { greater_than_or_equal_to: -3.00, less_than_or_equal_to: 3.00  }
   validates :delay, numericality: { greater_than_or_equal_to: 0, less_than_or_equal_to: 1 }
+  validates :note_filter, numericality: { greater_than_or_equal_to: -4800, less_than_or_equal_to: 4800 }
 
 end

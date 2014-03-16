@@ -116,6 +116,20 @@ describe Key do
       expect(middle_e.valid?).to eq(false)
     end
 
+    it "note_filter is a floating pint number between -4800 and 4800" do 
+      high_edge_case    = Key.create(frequency: 261.626,  wave: 0, panner: 0, delay:    0, note_filter:   4800,  volume: 0.5, key_code: 15)
+      low_edge_case     = Key.create(frequency: 277.183,  wave: 0, panner: 0, delay:    1, note_filter:  -4800,  volume: 0.5, key_code: 16)
+      midrange          = Key.create(frequency: 293.665,  wave: 0, panner: 0, delay:  0.5, note_filter:    0.5,  volume: 0.5, key_code: 17)
+      out_of_range_high = Key.create(frequency: 261.626,  wave: 0, panner: 0, delay:    0, note_filter:   4800.1, volume: 0.5, key_code: 15)
+      out_of_range_low  = Key.create(frequency: 277.183,  wave: 0, panner: 0, delay:    1, note_filter:  -4800.1, volume: 0.5, key_code: 16)
+
+      expect(high_edge_case.valid?).to eq(true)
+      expect(low_edge_case.valid? ).to eq(true)
+      expect(midrange.valid?).to eq(true)
+      expect(out_of_range_high.valid? ).to eq(false)
+      expect(out_of_range_low.valid?).to eq(false)
+    end
+
   end
 end
 
