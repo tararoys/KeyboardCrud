@@ -18,5 +18,7 @@ describe Keyboard do
     it "has a name" do
       expect{Keyboard.create!()}.to raise_error(ActiveRecord::RecordInvalid)
     end
+
+    it "Todo: decide if we want keyboards to have unique names."
   end
 end
