@@ -13,6 +13,11 @@ describe Key do
       key = Key.new(frequency: 1000.22)
       expect(key.frequency).to eq(1000.22)
     end
+
+    it "has a waveform that is a string" do
+      key = Key.new(wave: "0")
+      expect(key.wave).to eq ("0")
+    end
   end
 end
 
