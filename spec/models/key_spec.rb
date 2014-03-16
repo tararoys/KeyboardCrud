@@ -64,6 +64,7 @@ describe Key do
     end 
 
     it "frequency is a floating point number between 50.00 and 5000.00" do 
+      #This is approximately the range of notes on a piano.
       middle_c = Key.create(frequency: 261.626, wave: 1, panner: -3, delay: 0.1, note_filter: -1000.00, volume: 0.5, key_code: 62)
       earsplitting = Key.create(frequency: 5200.00, wave: 1, panner: -3, delay: 0.1, note_filter: -1000.00, volume: 0.5, key_code: 63)
       too_low = Key.create(frequency: 0, wave: 1, panner: -3, delay: 0.1, note_filter: -1000.00, volume: 0.5, key_code: 64)
