@@ -13,4 +13,10 @@ describe Keyboard do
       expect(keyboard.user_id).to eq(1)
     end
   end
+
+  context "to have the following validations" do
+    it "has a name" do
+      expect{Keyboard.create!()}.to raise_error(ActiveRecord::RecordInvalid)
+    end
+  end
 end
