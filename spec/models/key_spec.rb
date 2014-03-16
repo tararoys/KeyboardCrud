@@ -18,6 +18,8 @@ describe Key do
       key = Key.new(wave: "0")
       expect(key.wave).to eq ("0")
     end
+
+    it "need to decide if we want the wave to be a string or an integer"
   end
 end
 
