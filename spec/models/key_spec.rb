@@ -20,6 +20,11 @@ describe Key do
     end
 
     it "need to decide if we want the wave to be a string or an integer"
+
+    it "has a panner" do 
+      key = Key.new(panner: -20)
+      expect(key.panner).to eq ( -20 )
+    end 
   end
 end
 
