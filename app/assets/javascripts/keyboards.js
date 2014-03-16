@@ -28,15 +28,15 @@ Key.prototype.stopPlayingNote = function(){
 }
 
 var keyboard = { 
-    keys: { 65: new Key(65) },
+    keys: {  },
     init: function(){
         mykeys = this.keys;
         $(".key").each(function(){
             var keycode_span = $(this).find("div[id^='keycode'] p > span");
             var keycode = parseInt(keycode_span.text());
             var frequency_span = $(this).find("div[id^='freq'] p > span");
-            var frequency = parseInt(frequency_span.text());
-            mykeys[keycode] = new Key(keycode, frequency, 0.5) ;
+            var frequency = parseFloat(frequency_span.text());
+            mykeys[keycode] = new Key(keycode, frequency, .01) ;
         });
     },
     hasKey: function(keyCode){
