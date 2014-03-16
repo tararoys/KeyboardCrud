@@ -34,12 +34,20 @@ class KeyboardsController < ApplicationController
     @owner = User.find(@keyboard.user_id)
   end
 
+
+  def edit
+    @keyboard = Keyboard.find(params[:id])
+    @keys = Key.where(keyboard_id: @keyboard.id).all
+    @owner = User.find(@keyboard.user_id)
+  end
+
   def update
     @key = Key.find(params[:key_id])
     @keyboard = Keyboard.find(params[:keyboard_id])
     @owner = User.find(@keyboard.user_id)
     @key.update_attributes(key_params)
-    redirect_to @keyboard 
+
+    redirect_to("/users/#{@owner.id}/keyboards/#{@keyboard.id}")
   end
 
   private
