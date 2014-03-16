@@ -5,5 +5,8 @@ describe "Tara Learning Stuff" do
       end
 
       it "Does the new command create a keyboard id?"
+
+      it "Can objects exist without being inserted into the database?"
+
     end
 end
