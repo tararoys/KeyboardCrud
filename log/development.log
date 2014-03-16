@@ -41795,3 +41795,1064 @@ Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-03-15 17
 
 
 Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-03-15 17:24:06 -0500
+
+
+Started GET "/keyboards/3/keys/new" for 127.0.0.1 at 2014-03-15 17:25:37 -0500
+Processing by KeysController#new as HTML
+  Parameters: {"keyboard_id"=>"3"}
+  [1m[36mKeyboard Load (0.7ms)[0m  [1mSELECT "keyboards".* FROM "keyboards" WHERE "keyboards"."id" = $1 LIMIT 1[0m  [["id", "3"]]
+  Rendered keys/_form.html.erb (7.2ms)
+  Rendered keys/new.html.erb within layouts/application (8.8ms)
+  [1m[35mUser Load (0.8ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered layouts/_navbar.html.erb (2.7ms)
+  Rendered layouts/_messages.html.erb (0.8ms)
+Completed 200 OK in 42ms (Views: 37.8ms | ActiveRecord: 1.5ms)
+
+
+Started POST "/keyboards/3/keys" for 127.0.0.1 at 2014-03-15 17:25:55 -0500
+Processing by KeysController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9sNJqA1R4+LQa5MBmUY7b5kb+KzZFYxsJk2X5CjEI+w=", "key"=>{"frequency"=>"2525", "wave"=>"sine", "panner"=>"0.57", "delay"=>"0.56", "note_filter"=>"1520.48", "volume"=>"0.3", "key_code"=>"65"}, "commit"=>"Create Key", "keyboard_id"=>"3"}
+  [1m[36mKeyboard Load (0.4ms)[0m  [1mSELECT "keyboards".* FROM "keyboards" WHERE "keyboards"."id" = $1 LIMIT 1[0m  [["id", "3"]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "keys" ("created_at", "delay", "frequency", "key_code", "keyboard_id", "note_filter", "panner", "updated_at", "volume", "wave") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["created_at", Sat, 15 Mar 2014 22:25:55 UTC +00:00], ["delay", 0], ["frequency", 2525], ["key_code", 65], ["keyboard_id", 3], ["note_filter", 1520], ["panner", 0], ["updated_at", Sat, 15 Mar 2014 22:25:55 UTC +00:00], ["volume", 0], ["wave", "sine"]]
+  [1m[35m (2.9ms)[0m  COMMIT
+Redirected to http://localhost:3000/keyboards/3
+Completed 302 Found in 20ms (ActiveRecord: 4.2ms)
+
+
+Started GET "/keyboards/3" for 127.0.0.1 at 2014-03-15 17:25:55 -0500
+Processing by KeyboardsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mKeyboard Load (0.3ms)[0m  [1mSELECT "keyboards".* FROM "keyboards" WHERE "keyboards"."id" = $1 LIMIT 1[0m  [["id", "3"]]
+  [1m[35mKey Load (0.4ms)[0m  SELECT "keys".* FROM "keys" WHERE "keys"."keyboard_id" = $1  [["keyboard_id", 3]]
+  Rendered keyboards/show.html.erb within layouts/application (7.1ms)
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered layouts/_navbar.html.erb (3.0ms)
+  Rendered layouts/_messages.html.erb (0.2ms)
+Completed 200 OK in 32ms (Views: 29.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/custome.css?body=1" for 127.0.0.1 at 2014-03-15 17:25:56 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-15 17:25:56 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-15 17:25:56 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-15 17:25:56 -0500
+
+
+Started GET "/assets/keyboards.css?body=1" for 127.0.0.1 at 2014-03-15 17:25:56 -0500
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-03-15 17:25:56 -0500
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-03-15 17:25:56 -0500
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-03-15 17:25:56 -0500
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-03-15 17:25:56 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-03-15 17:25:56 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-03-15 17:25:56 -0500
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-03-15 17:25:56 -0500
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-03-15 17:25:56 -0500
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-03-15 17:25:56 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-03-15 17:25:56 -0500
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-03-15 17:25:56 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-03-15 17:25:56 -0500
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-03-15 17:25:56 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-15 17:25:56 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-15 17:25:56 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-03-15 17:25:56 -0500
+
+
+Started GET "/assets/keyboards.js?body=1" for 127.0.0.1 at 2014-03-15 17:25:56 -0500
+  [1m[36mKey Load (6.7ms)[0m  [1mSELECT "keys".* FROM "keys"[0m
+  [1m[36m (8.7ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying(255) NOT NULL) [0m
+  [1m[35m (3.1ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to DeviseCreateUsers (20140314153027)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (13.2ms)[0m  [1mCREATE TABLE "users" ("id" serial primary key, "email" character varying(255) DEFAULT '' NOT NULL, "encrypted_password" character varying(255) DEFAULT '' NOT NULL, "reset_password_token" character varying(255), "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" timestamp, "last_sign_in_at" timestamp, "current_sign_in_ip" character varying(255), "last_sign_in_ip" character varying(255), "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35m (1.6ms)[0m  CREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")
+  [1m[36m (1.1ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[35mSQL (1.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140314153027"]]
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+Migrating to CreateKeyboards (20140314155322)
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (3.4ms)[0m  [1mCREATE TABLE "keyboards" ("id" serial primary key, "user_id" integer, "name" character varying(255), "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140314155322"]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+Migrating to CreateKeys (20140314155358)
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (3.6ms)[0m  [1mCREATE TABLE "keys" ("id" serial primary key, "keyboard_id" integer, "frequency" integer, "wave" character varying(255), "panner" integer, "delay" integer, "note_filter" integer, "volume" integer, "key_code" integer, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140314155358"]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.4ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.9ms)[0m  BEGIN
+  [1m[36mSQL (10.2ms)[0m  [1mINSERT INTO "keyboards" ("created_at", "name", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", Sat, 15 Mar 2014 23:15:56 UTC +00:00], ["name", "Middle_C_Keyboard"], ["updated_at", Sat, 15 Mar 2014 23:15:56 UTC +00:00]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.6ms)[0m  INSERT INTO "keys" ("created_at", "delay", "frequency", "key_code", "note_filter", "panner", "updated_at", "volume", "wave") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"  [["created_at", Sat, 15 Mar 2014 23:15:56 UTC +00:00], ["delay", 0], ["frequency", 261], ["key_code", 65], ["note_filter", 0], ["panner", 0], ["updated_at", Sat, 15 Mar 2014 23:15:56 UTC +00:00], ["volume", 0], ["wave", 0]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[36m (5.4ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying(255) NOT NULL) [0m
+  [1m[35m (4.1ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to DeviseCreateUsers (20140314153027)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (8.2ms)[0m  [1mCREATE TABLE "users" ("id" serial primary key, "email" character varying(255) DEFAULT '' NOT NULL, "encrypted_password" character varying(255) DEFAULT '' NOT NULL, "reset_password_token" character varying(255), "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" timestamp, "last_sign_in_at" timestamp, "current_sign_in_ip" character varying(255), "last_sign_in_ip" character varying(255), "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35m (1.7ms)[0m  CREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")
+  [1m[36m (1.0ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[35mSQL (1.4ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140314153027"]]
+  [1m[36m (0.8ms)[0m  [1mCOMMIT[0m
+Migrating to CreateKeyboards (20140314155322)
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36m (4.2ms)[0m  [1mCREATE TABLE "keyboards" ("id" serial primary key, "user_id" integer, "name" character varying(255), "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140314155322"]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+Migrating to CreateKeys (20140314155358)
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (4.3ms)[0m  [1mCREATE TABLE "keys" ("id" serial primary key, "keyboard_id" integer, "frequency" integer, "wave" character varying(255), "panner" integer, "delay" integer, "note_filter" integer, "volume" integer, "key_code" integer, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140314155358"]]
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.4ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mSQL (6.3ms)[0m  [1mINSERT INTO "keyboards" ("created_at", "name", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", Sat, 15 Mar 2014 23:17:16 UTC +00:00], ["name", "Middle_C_Keyboard"], ["updated_at", Sat, 15 Mar 2014 23:17:16 UTC +00:00]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.5ms)[0m  INSERT INTO "keys" ("created_at", "delay", "frequency", "key_code", "note_filter", "panner", "updated_at", "volume", "wave") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"  [["created_at", Sat, 15 Mar 2014 23:17:16 UTC +00:00], ["delay", 0], ["frequency", 261], ["key_code", 65], ["note_filter", 0], ["panner", 0], ["updated_at", Sat, 15 Mar 2014 23:17:16 UTC +00:00], ["volume", 0], ["wave", 0]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (1.0ms)[0m  [1mUPDATE "keys" SET "keyboard_id" = $1, "updated_at" = $2 WHERE "keys"."id" = 1[0m  [["keyboard_id", 1], ["updated_at", Sat, 15 Mar 2014 23:17:16 UTC +00:00]]
+  [1m[35m (0.5ms)[0m  COMMIT
+
+
+Started GET "/keyboards/1" for 127.0.0.1 at 2014-03-15 18:31:51 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (1.9ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by KeyboardsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mKeyboard Load (1.2ms)[0m  SELECT "keyboards".* FROM "keyboards" WHERE "keyboards"."id" = $1 LIMIT 1  [["id", "1"]]
+  [1m[36mKey Load (4.1ms)[0m  [1mSELECT "keys".* FROM "keys" WHERE "keys"."keyboard_id" = $1[0m  [["keyboard_id", 1]]
+  Rendered keyboards/show.html.erb within layouts/application (67.0ms)
+  [1m[35mUser Load (1.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered layouts/_navbar.html.erb (30.3ms)
+  Rendered layouts/_messages.html.erb (0.9ms)
+Completed 200 OK in 665ms (Views: 560.5ms | ActiveRecord: 14.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-15 18:31:52 -0500
+
+
+Started GET "/assets/custome.css?body=1" for 127.0.0.1 at 2014-03-15 18:31:52 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-15 18:31:52 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-15 18:31:52 -0500
+
+
+Started GET "/assets/keyboards.css?body=1" for 127.0.0.1 at 2014-03-15 18:31:52 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-03-15 18:31:52 -0500
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-03-15 18:31:52 -0500
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-03-15 18:31:52 -0500
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-03-15 18:31:52 -0500
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-03-15 18:31:52 -0500
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-03-15 18:31:52 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-03-15 18:31:52 -0500
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-03-15 18:31:52 -0500
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-03-15 18:31:52 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-03-15 18:31:52 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-03-15 18:31:52 -0500
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-03-15 18:31:52 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-03-15 18:31:52 -0500
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-03-15 18:31:52 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-15 18:31:52 -0500
+
+
+Started GET "/assets/keyboards.js?body=1" for 127.0.0.1 at 2014-03-15 18:31:53 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-15 18:31:53 -0500
+
+
+Started GET "/keyboards/1" for 127.0.0.1 at 2014-03-15 18:32:33 -0500
+Processing by KeyboardsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mKeyboard Load (0.6ms)[0m  [1mSELECT "keyboards".* FROM "keyboards" WHERE "keyboards"."id" = $1 LIMIT 1[0m  [["id", "1"]]
+  [1m[35mKey Load (0.6ms)[0m  SELECT "keys".* FROM "keys" WHERE "keys"."keyboard_id" = $1  [["keyboard_id", 1]]
+  Rendered keyboards/show.html.erb within layouts/application (4.7ms)
+  Rendered layouts/_navbar.html.erb (1.3ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 35ms (Views: 31.0ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/custome.css?body=1" for 127.0.0.1 at 2014-03-15 18:32:33 -0500
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-03-15 18:32:34 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-15 18:32:34 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-15 18:32:34 -0500
+
+
+Started GET "/assets/keyboards.css?body=1" for 127.0.0.1 at 2014-03-15 18:32:34 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-03-15 18:32:34 -0500
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-03-15 18:32:34 -0500
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-03-15 18:32:34 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-03-15 18:32:34 -0500
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-03-15 18:32:34 -0500
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-03-15 18:32:34 -0500
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-03-15 18:32:34 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-15 18:32:34 -0500
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-03-15 18:32:34 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-03-15 18:32:34 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-03-15 18:32:34 -0500
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-03-15 18:32:34 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-03-15 18:32:34 -0500
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-03-15 18:32:34 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-15 18:32:34 -0500
+
+
+Started GET "/assets/keyboards.js?body=1" for 127.0.0.1 at 2014-03-15 18:32:34 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-15 18:32:34 -0500
+  [1m[36m (4.3ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying(255) NOT NULL) [0m
+  [1m[35m (1.9ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to DeviseCreateUsers (20140314153027)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (9.2ms)[0m  [1mCREATE TABLE "users" ("id" serial primary key, "email" character varying(255) DEFAULT '' NOT NULL, "encrypted_password" character varying(255) DEFAULT '' NOT NULL, "reset_password_token" character varying(255), "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" timestamp, "last_sign_in_at" timestamp, "current_sign_in_ip" character varying(255), "last_sign_in_ip" character varying(255), "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35m (1.7ms)[0m  CREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")
+  [1m[36m (1.0ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[35mSQL (1.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140314153027"]]
+  [1m[36m (6.2ms)[0m  [1mCOMMIT[0m
+Migrating to CreateKeyboards (20140314155322)
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36m (6.8ms)[0m  [1mCREATE TABLE "keyboards" ("id" serial primary key, "user_id" integer, "name" character varying(255), "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140314155322"]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+Migrating to CreateKeys (20140314155358)
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (3.7ms)[0m  [1mCREATE TABLE "keys" ("id" serial primary key, "keyboard_id" integer, "frequency" integer, "wave" character varying(255), "panner" integer, "delay" integer, "note_filter" integer, "volume" integer, "key_code" integer, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140314155358"]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.9ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/keyboards/1" for 127.0.0.1 at 2014-03-15 18:33:39 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by KeyboardsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mKeyboard Load (3.1ms)[0m  SELECT "keyboards".* FROM "keyboards" WHERE "keyboards"."id" = $1 LIMIT 1  [["id", "1"]]
+Completed 404 Not Found in 86ms
+
+ActiveRecord::RecordNotFound (Couldn't find Keyboard with id=1):
+  app/controllers/keyboards_controller.rb:24:in `show'
+
+
+  Rendered /Users/tlroys/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.2ms)
+  Rendered /Users/tlroys/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.1ms)
+  Rendered /Users/tlroys/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.7ms)
+  Rendered /Users/tlroys/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (44.2ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mSQL (7.4ms)[0m  [1mINSERT INTO "keyboards" ("created_at", "name", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", Sat, 15 Mar 2014 23:33:54 UTC +00:00], ["name", "Middle_C_Keyboard"], ["updated_at", Sat, 15 Mar 2014 23:33:54 UTC +00:00]]
+  [1m[35m (2.0ms)[0m  COMMIT
+  [1m[36m (2.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.4ms)[0m  INSERT INTO "keys" ("created_at", "delay", "frequency", "key_code", "note_filter", "panner", "updated_at", "volume", "wave") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"  [["created_at", Sat, 15 Mar 2014 23:33:54 UTC +00:00], ["delay", 0], ["frequency", 262], ["key_code", 65], ["note_filter", 0], ["panner", 0], ["updated_at", Sat, 15 Mar 2014 23:33:54 UTC +00:00], ["volume", 0], ["wave", 0]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (1.0ms)[0m  [1mUPDATE "keys" SET "keyboard_id" = $1, "updated_at" = $2 WHERE "keys"."id" = 1[0m  [["keyboard_id", 1], ["updated_at", Sat, 15 Mar 2014 23:33:54 UTC +00:00]]
+  [1m[35m (0.4ms)[0m  COMMIT
+
+
+Started GET "/keyboards/1" for 127.0.0.1 at 2014-03-15 18:33:56 -0500
+Processing by KeyboardsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mKeyboard Load (1.3ms)[0m  [1mSELECT "keyboards".* FROM "keyboards" WHERE "keyboards"."id" = $1 LIMIT 1[0m  [["id", "1"]]
+  [1m[35mKey Load (4.2ms)[0m  SELECT "keys".* FROM "keys" WHERE "keys"."keyboard_id" = $1  [["keyboard_id", 1]]
+  Rendered keyboards/show.html.erb within layouts/application (60.5ms)
+  Rendered layouts/_navbar.html.erb (19.9ms)
+  Rendered layouts/_messages.html.erb (0.9ms)
+Completed 200 OK in 425ms (Views: 398.8ms | ActiveRecord: 15.0ms)
+
+
+Started GET "/assets/keyboards.css?body=1" for 127.0.0.1 at 2014-03-15 18:33:56 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-15 18:33:57 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-03-15 18:33:57 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-15 18:33:57 -0500
+
+
+Started GET "/assets/custome.css?body=1" for 127.0.0.1 at 2014-03-15 18:33:57 -0500
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-03-15 18:33:57 -0500
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-03-15 18:33:57 -0500
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-03-15 18:33:57 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-15 18:33:57 -0500
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-03-15 18:33:57 -0500
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-03-15 18:33:57 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-03-15 18:33:57 -0500
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-03-15 18:33:57 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-03-15 18:33:57 -0500
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-03-15 18:33:57 -0500
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-03-15 18:33:57 -0500
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-03-15 18:33:57 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-03-15 18:33:57 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-15 18:33:57 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-03-15 18:33:57 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-15 18:33:57 -0500
+
+
+Started GET "/assets/keyboards.js?body=1" for 127.0.0.1 at 2014-03-15 18:33:57 -0500
+  [1m[36m (18.1ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying(255) NOT NULL) [0m
+  [1m[35m (1.8ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to DeviseCreateUsers (20140314153027)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (7.6ms)[0m  [1mCREATE TABLE "users" ("id" serial primary key, "email" character varying(255) DEFAULT '' NOT NULL, "encrypted_password" character varying(255) DEFAULT '' NOT NULL, "reset_password_token" character varying(255), "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" timestamp, "last_sign_in_at" timestamp, "current_sign_in_ip" character varying(255), "last_sign_in_ip" character varying(255), "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35m (1.9ms)[0m  CREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")
+  [1m[36m (1.1ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[35mSQL (1.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140314153027"]]
+  [1m[36m (5.7ms)[0m  [1mCOMMIT[0m
+Migrating to CreateKeyboards (20140314155322)
+  [1m[35m (1.7ms)[0m  BEGIN
+  [1m[36m (4.4ms)[0m  [1mCREATE TABLE "keyboards" ("id" serial primary key, "user_id" integer, "name" character varying(255), "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140314155322"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+Migrating to CreateKeys (20140314155358)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (4.0ms)[0m  [1mCREATE TABLE "keys" ("id" serial primary key, "keyboard_id" integer, "frequency" integer, "wave" character varying(255), "panner" integer, "delay" integer, "note_filter" integer, "volume" integer, "key_code" integer, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140314155358"]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (6.3ms)[0m  [1mINSERT INTO "keyboards" ("created_at", "name", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", Sat, 15 Mar 2014 23:56:19 UTC +00:00], ["name", "Middle_C_Keyboard"], ["updated_at", Sat, 15 Mar 2014 23:56:19 UTC +00:00]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.3ms)[0m  INSERT INTO "keys" ("created_at", "delay", "frequency", "key_code", "note_filter", "panner", "updated_at", "volume", "wave") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"  [["created_at", Sat, 15 Mar 2014 23:56:19 UTC +00:00], ["delay", 0], ["frequency", 261], ["key_code", 65], ["note_filter", 0], ["panner", 0], ["updated_at", Sat, 15 Mar 2014 23:56:19 UTC +00:00], ["volume", 0], ["wave", 0]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "keys" ("created_at", "delay", "frequency", "key_code", "note_filter", "panner", "updated_at", "volume", "wave") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["created_at", Sat, 15 Mar 2014 23:56:19 UTC +00:00], ["delay", 0], ["frequency", 277], ["key_code", 87], ["note_filter", 0], ["panner", 0], ["updated_at", Sat, 15 Mar 2014 23:56:19 UTC +00:00], ["volume", 0], ["wave", 0]]
+  [1m[35m (0.7ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "keys" ("created_at", "delay", "frequency", "key_code", "note_filter", "panner", "updated_at", "volume", "wave") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"  [["created_at", Sat, 15 Mar 2014 23:56:19 UTC +00:00], ["delay", 0], ["frequency", 293], ["key_code", 83], ["note_filter", 0], ["panner", 0], ["updated_at", Sat, 15 Mar 2014 23:56:19 UTC +00:00], ["volume", 0], ["wave", 0]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "keys" ("created_at", "delay", "frequency", "key_code", "note_filter", "panner", "updated_at", "volume", "wave") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["created_at", Sat, 15 Mar 2014 23:56:19 UTC +00:00], ["delay", 0], ["frequency", 311], ["key_code", 69], ["note_filter", 0], ["panner", 0], ["updated_at", Sat, 15 Mar 2014 23:56:19 UTC +00:00], ["volume", 0], ["wave", 0]]
+  [1m[35m (0.8ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "keys" ("created_at", "delay", "frequency", "key_code", "note_filter", "panner", "updated_at", "volume", "wave") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"  [["created_at", Sat, 15 Mar 2014 23:56:19 UTC +00:00], ["delay", 0], ["frequency", 329], ["key_code", 68], ["note_filter", 0], ["panner", 0], ["updated_at", Sat, 15 Mar 2014 23:56:19 UTC +00:00], ["volume", 0], ["wave", 0]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "keys" ("created_at", "delay", "frequency", "key_code", "note_filter", "panner", "updated_at", "volume", "wave") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["created_at", Sat, 15 Mar 2014 23:56:19 UTC +00:00], ["delay", 0], ["frequency", 349], ["key_code", 70], ["note_filter", 0], ["panner", 0], ["updated_at", Sat, 15 Mar 2014 23:56:19 UTC +00:00], ["volume", 0], ["wave", 0]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.8ms)[0m  INSERT INTO "keys" ("created_at", "delay", "frequency", "key_code", "note_filter", "panner", "updated_at", "volume", "wave") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"  [["created_at", Sat, 15 Mar 2014 23:56:19 UTC +00:00], ["delay", 0], ["frequency", 369], ["key_code", 84], ["note_filter", 0], ["panner", 0], ["updated_at", Sat, 15 Mar 2014 23:56:19 UTC +00:00], ["volume", 0], ["wave", 0]]
+  [1m[36m (1.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "keys" ("created_at", "delay", "frequency", "key_code", "note_filter", "panner", "updated_at", "volume", "wave") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["created_at", Sat, 15 Mar 2014 23:56:19 UTC +00:00], ["delay", 0], ["frequency", 391], ["key_code", 74], ["note_filter", 0], ["panner", 0], ["updated_at", Sat, 15 Mar 2014 23:56:19 UTC +00:00], ["volume", 0], ["wave", 0]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "keys" ("created_at", "delay", "frequency", "key_code", "note_filter", "panner", "updated_at", "volume", "wave") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"  [["created_at", Sat, 15 Mar 2014 23:56:19 UTC +00:00], ["delay", 0], ["frequency", 415], ["key_code", 73], ["note_filter", 0], ["panner", 0], ["updated_at", Sat, 15 Mar 2014 23:56:19 UTC +00:00], ["volume", 0], ["wave", 0]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "keys" ("created_at", "delay", "frequency", "key_code", "note_filter", "panner", "updated_at", "volume", "wave") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["created_at", Sat, 15 Mar 2014 23:56:19 UTC +00:00], ["delay", 0], ["frequency", 440], ["key_code", 75], ["note_filter", 0], ["panner", 0], ["updated_at", Sat, 15 Mar 2014 23:56:19 UTC +00:00], ["volume", 0], ["wave", 0]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "keys" ("created_at", "delay", "frequency", "key_code", "note_filter", "panner", "updated_at", "volume", "wave") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"  [["created_at", Sat, 15 Mar 2014 23:56:19 UTC +00:00], ["delay", 0], ["frequency", 466], ["key_code", 76], ["note_filter", 0], ["panner", 0], ["updated_at", Sat, 15 Mar 2014 23:56:19 UTC +00:00], ["volume", 0], ["wave", 0]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "keys" ("created_at", "delay", "frequency", "key_code", "note_filter", "panner", "updated_at", "volume", "wave") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["created_at", Sat, 15 Mar 2014 23:56:19 UTC +00:00], ["delay", 0], ["frequency", 493], ["key_code", 79], ["note_filter", 0], ["panner", 0], ["updated_at", Sat, 15 Mar 2014 23:56:19 UTC +00:00], ["volume", 0], ["wave", 0]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "keys" ("created_at", "delay", "frequency", "key_code", "note_filter", "panner", "updated_at", "volume", "wave") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"  [["created_at", Sat, 15 Mar 2014 23:56:19 UTC +00:00], ["delay", 0], ["frequency", 523], ["key_code", 186], ["note_filter", 0], ["panner", 0], ["updated_at", Sat, 15 Mar 2014 23:56:19 UTC +00:00], ["volume", 0], ["wave", 0]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (1.0ms)[0m  [1mUPDATE "keys" SET "keyboard_id" = $1, "updated_at" = $2 WHERE "keys"."id" = 1[0m  [["keyboard_id", 1], ["updated_at", Sat, 15 Mar 2014 23:56:19 UTC +00:00]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  UPDATE "keys" SET "keyboard_id" = $1, "updated_at" = $2 WHERE "keys"."id" = 2  [["keyboard_id", 1], ["updated_at", Sat, 15 Mar 2014 23:56:19 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mUPDATE "keys" SET "keyboard_id" = $1, "updated_at" = $2 WHERE "keys"."id" = 3[0m  [["keyboard_id", 1], ["updated_at", Sat, 15 Mar 2014 23:56:19 UTC +00:00]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  UPDATE "keys" SET "keyboard_id" = $1, "updated_at" = $2 WHERE "keys"."id" = 4  [["keyboard_id", 1], ["updated_at", Sat, 15 Mar 2014 23:56:19 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mUPDATE "keys" SET "keyboard_id" = $1, "updated_at" = $2 WHERE "keys"."id" = 5[0m  [["keyboard_id", 1], ["updated_at", Sat, 15 Mar 2014 23:56:19 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  UPDATE "keys" SET "keyboard_id" = $1, "updated_at" = $2 WHERE "keys"."id" = 6  [["keyboard_id", 1], ["updated_at", Sat, 15 Mar 2014 23:56:19 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mUPDATE "keys" SET "keyboard_id" = $1, "updated_at" = $2 WHERE "keys"."id" = 7[0m  [["keyboard_id", 1], ["updated_at", Sat, 15 Mar 2014 23:56:19 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  UPDATE "keys" SET "keyboard_id" = $1, "updated_at" = $2 WHERE "keys"."id" = 8  [["keyboard_id", 1], ["updated_at", Sat, 15 Mar 2014 23:56:19 UTC +00:00]]
+  [1m[36m (1.9ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mUPDATE "keys" SET "keyboard_id" = $1, "updated_at" = $2 WHERE "keys"."id" = 9[0m  [["keyboard_id", 1], ["updated_at", Sat, 15 Mar 2014 23:56:19 UTC +00:00]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  UPDATE "keys" SET "keyboard_id" = $1, "updated_at" = $2 WHERE "keys"."id" = 10  [["keyboard_id", 1], ["updated_at", Sat, 15 Mar 2014 23:56:19 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mUPDATE "keys" SET "keyboard_id" = $1, "updated_at" = $2 WHERE "keys"."id" = 11[0m  [["keyboard_id", 1], ["updated_at", Sat, 15 Mar 2014 23:56:19 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  UPDATE "keys" SET "keyboard_id" = $1, "updated_at" = $2 WHERE "keys"."id" = 12  [["keyboard_id", 1], ["updated_at", Sat, 15 Mar 2014 23:56:19 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mUPDATE "keys" SET "keyboard_id" = $1, "updated_at" = $2 WHERE "keys"."id" = 13[0m  [["keyboard_id", 1], ["updated_at", Sat, 15 Mar 2014 23:56:19 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  COMMIT
+
+
+Started GET "/keyboards/1" for 127.0.0.1 at 2014-03-15 18:56:39 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by KeyboardsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mKeyboard Load (1.2ms)[0m  SELECT "keyboards".* FROM "keyboards" WHERE "keyboards"."id" = $1 LIMIT 1  [["id", "1"]]
+  [1m[36mKey Load (5.8ms)[0m  [1mSELECT "keys".* FROM "keys" WHERE "keys"."keyboard_id" = $1[0m  [["keyboard_id", 1]]
+  Rendered keyboards/show.html.erb within layouts/application (74.7ms)
+  Rendered layouts/_navbar.html.erb (33.3ms)
+  Rendered layouts/_messages.html.erb (1.1ms)
+Completed 200 OK in 703ms (Views: 604.9ms | ActiveRecord: 13.3ms)
+
+
+Started GET "/assets/keyboards.css?body=1" for 127.0.0.1 at 2014-03-15 18:56:40 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-03-15 18:56:40 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-15 18:56:40 -0500
+
+
+Started GET "/assets/custome.css?body=1" for 127.0.0.1 at 2014-03-15 18:56:41 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-15 18:56:41 -0500
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-03-15 18:56:41 -0500
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-03-15 18:56:41 -0500
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-03-15 18:56:41 -0500
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-03-15 18:56:41 -0500
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-03-15 18:56:41 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-03-15 18:56:41 -0500
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-03-15 18:56:41 -0500
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-03-15 18:56:41 -0500
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-03-15 18:56:41 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-03-15 18:56:41 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-03-15 18:56:41 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-15 18:56:41 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-15 18:56:41 -0500
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-03-15 18:56:41 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-03-15 18:56:41 -0500
+
+
+Started GET "/assets/keyboards.js?body=1" for 127.0.0.1 at 2014-03-15 18:56:41 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-15 18:56:41 -0500
+  [1m[36m (4.3ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying(255) NOT NULL) [0m
+  [1m[35m (3.2ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to DeviseCreateUsers (20140314153027)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (12.2ms)[0m  [1mCREATE TABLE "users" ("id" serial primary key, "email" character varying(255) DEFAULT '' NOT NULL, "encrypted_password" character varying(255) DEFAULT '' NOT NULL, "reset_password_token" character varying(255), "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" timestamp, "last_sign_in_at" timestamp, "current_sign_in_ip" character varying(255), "last_sign_in_ip" character varying(255), "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35m (8.5ms)[0m  CREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")
+  [1m[36m (2.1ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140314153027"]]
+  [1m[36m (1.7ms)[0m  [1mCOMMIT[0m
+Migrating to CreateKeyboards (20140314155322)
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (4.8ms)[0m  [1mCREATE TABLE "keyboards" ("id" serial primary key, "user_id" integer, "name" character varying(255), "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140314155322"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+Migrating to CreateKeys (20140314155358)
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (3.5ms)[0m  [1mCREATE TABLE "keys" ("id" serial primary key, "keyboard_id" integer, "frequency" integer, "wave" character varying(255), "panner" integer, "delay" integer, "note_filter" integer, "volume" integer, "key_code" integer, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140314155358"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (3.5ms)[0m  BEGIN
+  [1m[36mSQL (9.1ms)[0m  [1mINSERT INTO "keyboards" ("created_at", "name", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", Sat, 15 Mar 2014 23:59:07 UTC +00:00], ["name", "Middle_C_Keyboard"], ["updated_at", Sat, 15 Mar 2014 23:59:07 UTC +00:00]]
+  [1m[35m (0.9ms)[0m  COMMIT
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.9ms)[0m  INSERT INTO "keys" ("created_at", "delay", "frequency", "key_code", "note_filter", "panner", "updated_at", "volume", "wave") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"  [["created_at", Sat, 15 Mar 2014 23:59:07 UTC +00:00], ["delay", 0], ["frequency", 261], ["key_code", 65], ["note_filter", 0], ["panner", 0], ["updated_at", Sat, 15 Mar 2014 23:59:07 UTC +00:00], ["volume", 0], ["wave", 0]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (1.2ms)[0m  [1mINSERT INTO "keys" ("created_at", "delay", "frequency", "key_code", "note_filter", "panner", "updated_at", "volume", "wave") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["created_at", Sat, 15 Mar 2014 23:59:07 UTC +00:00], ["delay", 0], ["frequency", 277], ["key_code", 87], ["note_filter", 0], ["panner", 0], ["updated_at", Sat, 15 Mar 2014 23:59:07 UTC +00:00], ["volume", 0], ["wave", 0]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "keys" ("created_at", "delay", "frequency", "key_code", "note_filter", "panner", "updated_at", "volume", "wave") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"  [["created_at", Sat, 15 Mar 2014 23:59:07 UTC +00:00], ["delay", 0], ["frequency", 293], ["key_code", 83], ["note_filter", 0], ["panner", 0], ["updated_at", Sat, 15 Mar 2014 23:59:07 UTC +00:00], ["volume", 0], ["wave", 0]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "keys" ("created_at", "delay", "frequency", "key_code", "note_filter", "panner", "updated_at", "volume", "wave") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["created_at", Sat, 15 Mar 2014 23:59:07 UTC +00:00], ["delay", 0], ["frequency", 311], ["key_code", 69], ["note_filter", 0], ["panner", 0], ["updated_at", Sat, 15 Mar 2014 23:59:07 UTC +00:00], ["volume", 0], ["wave", 0]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "keys" ("created_at", "delay", "frequency", "key_code", "note_filter", "panner", "updated_at", "volume", "wave") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"  [["created_at", Sat, 15 Mar 2014 23:59:07 UTC +00:00], ["delay", 0], ["frequency", 329], ["key_code", 68], ["note_filter", 0], ["panner", 0], ["updated_at", Sat, 15 Mar 2014 23:59:07 UTC +00:00], ["volume", 0], ["wave", 0]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (2.8ms)[0m  [1mINSERT INTO "keys" ("created_at", "delay", "frequency", "key_code", "note_filter", "panner", "updated_at", "volume", "wave") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["created_at", Sat, 15 Mar 2014 23:59:07 UTC +00:00], ["delay", 0], ["frequency", 349], ["key_code", 70], ["note_filter", 0], ["panner", 0], ["updated_at", Sat, 15 Mar 2014 23:59:07 UTC +00:00], ["volume", 0], ["wave", 0]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (5.9ms)[0m  INSERT INTO "keys" ("created_at", "delay", "frequency", "key_code", "note_filter", "panner", "updated_at", "volume", "wave") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"  [["created_at", Sat, 15 Mar 2014 23:59:07 UTC +00:00], ["delay", 0], ["frequency", 369], ["key_code", 84], ["note_filter", 0], ["panner", 0], ["updated_at", Sat, 15 Mar 2014 23:59:07 UTC +00:00], ["volume", 0], ["wave", 0]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "keys" ("created_at", "delay", "frequency", "key_code", "note_filter", "panner", "updated_at", "volume", "wave") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["created_at", Sat, 15 Mar 2014 23:59:07 UTC +00:00], ["delay", 0], ["frequency", 391], ["key_code", 74], ["note_filter", 0], ["panner", 0], ["updated_at", Sat, 15 Mar 2014 23:59:07 UTC +00:00], ["volume", 0], ["wave", 0]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (1.4ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (7.0ms)[0m  INSERT INTO "keys" ("created_at", "delay", "frequency", "key_code", "note_filter", "panner", "updated_at", "volume", "wave") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"  [["created_at", Sat, 15 Mar 2014 23:59:07 UTC +00:00], ["delay", 0], ["frequency", 415], ["key_code", 73], ["note_filter", 0], ["panner", 0], ["updated_at", Sat, 15 Mar 2014 23:59:07 UTC +00:00], ["volume", 0], ["wave", 0]]
+  [1m[36m (4.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "keys" ("created_at", "delay", "frequency", "key_code", "note_filter", "panner", "updated_at", "volume", "wave") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["created_at", Sat, 15 Mar 2014 23:59:07 UTC +00:00], ["delay", 0], ["frequency", 440], ["key_code", 75], ["note_filter", 0], ["panner", 0], ["updated_at", Sat, 15 Mar 2014 23:59:07 UTC +00:00], ["volume", 0], ["wave", 0]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "keys" ("created_at", "delay", "frequency", "key_code", "note_filter", "panner", "updated_at", "volume", "wave") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"  [["created_at", Sat, 15 Mar 2014 23:59:07 UTC +00:00], ["delay", 0], ["frequency", 466], ["key_code", 79], ["note_filter", 0], ["panner", 0], ["updated_at", Sat, 15 Mar 2014 23:59:07 UTC +00:00], ["volume", 0], ["wave", 0]]
+  [1m[36m (5.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "keys" ("created_at", "delay", "frequency", "key_code", "note_filter", "panner", "updated_at", "volume", "wave") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["created_at", Sat, 15 Mar 2014 23:59:07 UTC +00:00], ["delay", 0], ["frequency", 493], ["key_code", 76], ["note_filter", 0], ["panner", 0], ["updated_at", Sat, 15 Mar 2014 23:59:07 UTC +00:00], ["volume", 0], ["wave", 0]]
+  [1m[35m (2.7ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.3ms)[0m  INSERT INTO "keys" ("created_at", "delay", "frequency", "key_code", "note_filter", "panner", "updated_at", "volume", "wave") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"  [["created_at", Sat, 15 Mar 2014 23:59:07 UTC +00:00], ["delay", 0], ["frequency", 523], ["key_code", 186], ["note_filter", 0], ["panner", 0], ["updated_at", Sat, 15 Mar 2014 23:59:07 UTC +00:00], ["volume", 0], ["wave", 0]]
+  [1m[36m (3.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (1.6ms)[0m  BEGIN
+  [1m[36mSQL (1.2ms)[0m  [1mUPDATE "keys" SET "keyboard_id" = $1, "updated_at" = $2 WHERE "keys"."id" = 1[0m  [["keyboard_id", 1], ["updated_at", Sat, 15 Mar 2014 23:59:07 UTC +00:00]]
+  [1m[35m (5.2ms)[0m  COMMIT
+  [1m[36m (1.8ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (18.2ms)[0m  UPDATE "keys" SET "keyboard_id" = $1, "updated_at" = $2 WHERE "keys"."id" = 2  [["keyboard_id", 1], ["updated_at", Sat, 15 Mar 2014 23:59:07 UTC +00:00]]
+  [1m[36m (0.7ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (1.2ms)[0m  [1mUPDATE "keys" SET "keyboard_id" = $1, "updated_at" = $2 WHERE "keys"."id" = 3[0m  [["keyboard_id", 1], ["updated_at", Sat, 15 Mar 2014 23:59:07 UTC +00:00]]
+  [1m[35m (1.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  UPDATE "keys" SET "keyboard_id" = $1, "updated_at" = $2 WHERE "keys"."id" = 4  [["keyboard_id", 1], ["updated_at", Sat, 15 Mar 2014 23:59:07 UTC +00:00]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  BEGIN
+  [1m[36mSQL (2.5ms)[0m  [1mUPDATE "keys" SET "keyboard_id" = $1, "updated_at" = $2 WHERE "keys"."id" = 5[0m  [["keyboard_id", 1], ["updated_at", Sat, 15 Mar 2014 23:59:07 UTC +00:00]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.2ms)[0m  UPDATE "keys" SET "keyboard_id" = $1, "updated_at" = $2 WHERE "keys"."id" = 6  [["keyboard_id", 1], ["updated_at", Sat, 15 Mar 2014 23:59:07 UTC +00:00]]
+  [1m[36m (0.8ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (1.0ms)[0m  [1mUPDATE "keys" SET "keyboard_id" = $1, "updated_at" = $2 WHERE "keys"."id" = 7[0m  [["keyboard_id", 1], ["updated_at", Sat, 15 Mar 2014 23:59:07 UTC +00:00]]
+  [1m[35m (1.2ms)[0m  COMMIT
+  [1m[36m (1.9ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.1ms)[0m  UPDATE "keys" SET "keyboard_id" = $1, "updated_at" = $2 WHERE "keys"."id" = 8  [["keyboard_id", 1], ["updated_at", Sat, 15 Mar 2014 23:59:07 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (1.1ms)[0m  [1mUPDATE "keys" SET "keyboard_id" = $1, "updated_at" = $2 WHERE "keys"."id" = 9[0m  [["keyboard_id", 1], ["updated_at", Sat, 15 Mar 2014 23:59:07 UTC +00:00]]
+  [1m[35m (5.6ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.9ms)[0m  UPDATE "keys" SET "keyboard_id" = $1, "updated_at" = $2 WHERE "keys"."id" = 10  [["keyboard_id", 1], ["updated_at", Sat, 15 Mar 2014 23:59:07 UTC +00:00]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.9ms)[0m  BEGIN
+  [1m[36mSQL (0.7ms)[0m  [1mUPDATE "keys" SET "keyboard_id" = $1, "updated_at" = $2 WHERE "keys"."id" = 11[0m  [["keyboard_id", 1], ["updated_at", Sat, 15 Mar 2014 23:59:07 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  UPDATE "keys" SET "keyboard_id" = $1, "updated_at" = $2 WHERE "keys"."id" = 12  [["keyboard_id", 1], ["updated_at", Sat, 15 Mar 2014 23:59:07 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mUPDATE "keys" SET "keyboard_id" = $1, "updated_at" = $2 WHERE "keys"."id" = 13[0m  [["keyboard_id", 1], ["updated_at", Sat, 15 Mar 2014 23:59:07 UTC +00:00]]
+  [1m[35m (10.1ms)[0m  COMMIT
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-15 19:10:43 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (23.9ms)
+  Rendered layouts/_navbar.html.erb (2.2ms)
+  Rendered layouts/_messages.html.erb (2.4ms)
+Completed 200 OK in 537ms (Views: 494.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custome.css?body=1" for 127.0.0.1 at 2014-03-15 19:10:43 -0500
+
+
+Started GET "/assets/keyboards.css?body=1" for 127.0.0.1 at 2014-03-15 19:10:43 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-15 19:10:44 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-03-15 19:10:44 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-15 19:10:44 -0500
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-03-15 19:10:44 -0500
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-03-15 19:10:44 -0500
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-03-15 19:10:44 -0500
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-03-15 19:10:44 -0500
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-03-15 19:10:44 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-03-15 19:10:44 -0500
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-03-15 19:10:44 -0500
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-03-15 19:10:44 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-15 19:10:44 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-03-15 19:10:44 -0500
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-03-15 19:10:44 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-03-15 19:10:44 -0500
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-03-15 19:10:44 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-03-15 19:10:44 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-15 19:10:44 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-15 19:10:44 -0500
+
+
+Started GET "/assets/keyboards.js?body=1" for 127.0.0.1 at 2014-03-15 19:10:44 -0500
+
+
+Started GET "/keyboards/1" for 127.0.0.1 at 2014-03-15 19:10:52 -0500
+Processing by KeyboardsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mKeyboard Load (2.2ms)[0m  SELECT "keyboards".* FROM "keyboards" WHERE "keyboards"."id" = $1 LIMIT 1  [["id", "1"]]
+  [1m[36mKey Load (4.3ms)[0m  [1mSELECT "keys".* FROM "keys" WHERE "keys"."keyboard_id" = $1[0m  [["keyboard_id", 1]]
+  Rendered keyboards/show.html.erb within layouts/application (161.9ms)
+  Rendered layouts/_navbar.html.erb (1.9ms)
+  Rendered layouts/_messages.html.erb (0.4ms)
+Completed 200 OK in 241ms (Views: 194.4ms | ActiveRecord: 13.7ms)
+
+
+Started GET "/assets/custome.css?body=1" for 127.0.0.1 at 2014-03-15 19:10:53 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-15 19:10:53 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-03-15 19:10:53 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-15 19:10:53 -0500
+
+
+Started GET "/assets/keyboards.css?body=1" for 127.0.0.1 at 2014-03-15 19:10:53 -0500
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-03-15 19:10:53 -0500
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-03-15 19:10:53 -0500
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-03-15 19:10:53 -0500
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-03-15 19:10:53 -0500
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-03-15 19:10:53 -0500
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-03-15 19:10:53 -0500
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-03-15 19:10:53 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-03-15 19:10:53 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-03-15 19:10:53 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-03-15 19:10:53 -0500
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-03-15 19:10:53 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-03-15 19:10:53 -0500
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-03-15 19:10:53 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-15 19:10:53 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-15 19:10:53 -0500
+
+
+Started GET "/assets/keyboards.js?body=1" for 127.0.0.1 at 2014-03-15 19:10:53 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-15 19:10:53 -0500
+  [1m[36m (5.5ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying(255) NOT NULL) [0m
+  [1m[35m (2.2ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to DeviseCreateUsers (20140314153027)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (10.2ms)[0m  [1mCREATE TABLE "users" ("id" serial primary key, "email" character varying(255) DEFAULT '' NOT NULL, "encrypted_password" character varying(255) DEFAULT '' NOT NULL, "reset_password_token" character varying(255), "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" timestamp, "last_sign_in_at" timestamp, "current_sign_in_ip" character varying(255), "last_sign_in_ip" character varying(255), "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35m (2.6ms)[0m  CREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")
+  [1m[36m (1.4ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[35mSQL (1.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140314153027"]]
+  [1m[36m (0.7ms)[0m  [1mCOMMIT[0m
+Migrating to CreateKeyboards (20140314155322)
+  [1m[35m (0.7ms)[0m  BEGIN
+  [1m[36m (4.5ms)[0m  [1mCREATE TABLE "keyboards" ("id" serial primary key, "user_id" integer, "name" character varying(255), "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140314155322"]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+Migrating to CreateKeys (20140314155358)
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (6.6ms)[0m  [1mCREATE TABLE "keys" ("id" serial primary key, "keyboard_id" integer, "frequency" float, "wave" character varying(255), "panner" integer, "delay" integer, "note_filter" integer, "volume" integer, "key_code" integer, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140314155358"]]
+  [1m[36m (0.7ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (6.4ms)[0m  [1mINSERT INTO "keyboards" ("created_at", "name", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", Sun, 16 Mar 2014 00:17:43 UTC +00:00], ["name", "Middle_C_Keyboard"], ["updated_at", Sun, 16 Mar 2014 00:17:43 UTC +00:00]]
+  [1m[35m (0.6ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.4ms)[0m  INSERT INTO "keys" ("created_at", "delay", "frequency", "key_code", "note_filter", "panner", "updated_at", "volume", "wave") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"  [["created_at", Sun, 16 Mar 2014 00:17:43 UTC +00:00], ["delay", 0], ["frequency", 261.626], ["key_code", 65], ["note_filter", 0], ["panner", 0], ["updated_at", Sun, 16 Mar 2014 00:17:43 UTC +00:00], ["volume", 0], ["wave", 0]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "keys" ("created_at", "delay", "frequency", "key_code", "note_filter", "panner", "updated_at", "volume", "wave") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["created_at", Sun, 16 Mar 2014 00:17:43 UTC +00:00], ["delay", 0], ["frequency", 277.183], ["key_code", 87], ["note_filter", 0], ["panner", 0], ["updated_at", Sun, 16 Mar 2014 00:17:43 UTC +00:00], ["volume", 0], ["wave", 0]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "keys" ("created_at", "delay", "frequency", "key_code", "note_filter", "panner", "updated_at", "volume", "wave") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"  [["created_at", Sun, 16 Mar 2014 00:17:43 UTC +00:00], ["delay", 0], ["frequency", 293.665], ["key_code", 83], ["note_filter", 0], ["panner", 0], ["updated_at", Sun, 16 Mar 2014 00:17:43 UTC +00:00], ["volume", 0], ["wave", 0]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "keys" ("created_at", "delay", "frequency", "key_code", "note_filter", "panner", "updated_at", "volume", "wave") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["created_at", Sun, 16 Mar 2014 00:17:43 UTC +00:00], ["delay", 0], ["frequency", 311.127], ["key_code", 69], ["note_filter", 0], ["panner", 0], ["updated_at", Sun, 16 Mar 2014 00:17:43 UTC +00:00], ["volume", 0], ["wave", 0]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "keys" ("created_at", "delay", "frequency", "key_code", "note_filter", "panner", "updated_at", "volume", "wave") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"  [["created_at", Sun, 16 Mar 2014 00:17:43 UTC +00:00], ["delay", 0], ["frequency", 329.628], ["key_code", 68], ["note_filter", 0], ["panner", 0], ["updated_at", Sun, 16 Mar 2014 00:17:43 UTC +00:00], ["volume", 0], ["wave", 0]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "keys" ("created_at", "delay", "frequency", "key_code", "note_filter", "panner", "updated_at", "volume", "wave") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["created_at", Sun, 16 Mar 2014 00:17:43 UTC +00:00], ["delay", 0], ["frequency", 349.228], ["key_code", 70], ["note_filter", 0], ["panner", 0], ["updated_at", Sun, 16 Mar 2014 00:17:43 UTC +00:00], ["volume", 0], ["wave", 0]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "keys" ("created_at", "delay", "frequency", "key_code", "note_filter", "panner", "updated_at", "volume", "wave") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"  [["created_at", Sun, 16 Mar 2014 00:17:43 UTC +00:00], ["delay", 0], ["frequency", 369.994], ["key_code", 84], ["note_filter", 0], ["panner", 0], ["updated_at", Sun, 16 Mar 2014 00:17:43 UTC +00:00], ["volume", 0], ["wave", 0]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "keys" ("created_at", "delay", "frequency", "key_code", "note_filter", "panner", "updated_at", "volume", "wave") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["created_at", Sun, 16 Mar 2014 00:17:43 UTC +00:00], ["delay", 0], ["frequency", 391.995], ["key_code", 74], ["note_filter", 0], ["panner", 0], ["updated_at", Sun, 16 Mar 2014 00:17:43 UTC +00:00], ["volume", 0], ["wave", 0]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "keys" ("created_at", "delay", "frequency", "key_code", "note_filter", "panner", "updated_at", "volume", "wave") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"  [["created_at", Sun, 16 Mar 2014 00:17:43 UTC +00:00], ["delay", 0], ["frequency", 415.305], ["key_code", 73], ["note_filter", 0], ["panner", 0], ["updated_at", Sun, 16 Mar 2014 00:17:43 UTC +00:00], ["volume", 0], ["wave", 0]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "keys" ("created_at", "delay", "frequency", "key_code", "note_filter", "panner", "updated_at", "volume", "wave") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["created_at", Sun, 16 Mar 2014 00:17:43 UTC +00:00], ["delay", 0], ["frequency", 440.0], ["key_code", 75], ["note_filter", 0], ["panner", 0], ["updated_at", Sun, 16 Mar 2014 00:17:43 UTC +00:00], ["volume", 0], ["wave", 0]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "keys" ("created_at", "delay", "frequency", "key_code", "note_filter", "panner", "updated_at", "volume", "wave") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"  [["created_at", Sun, 16 Mar 2014 00:17:43 UTC +00:00], ["delay", 0], ["frequency", 466.164], ["key_code", 79], ["note_filter", 0], ["panner", 0], ["updated_at", Sun, 16 Mar 2014 00:17:43 UTC +00:00], ["volume", 0], ["wave", 0]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "keys" ("created_at", "delay", "frequency", "key_code", "note_filter", "panner", "updated_at", "volume", "wave") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["created_at", Sun, 16 Mar 2014 00:17:43 UTC +00:00], ["delay", 0], ["frequency", 493.883], ["key_code", 76], ["note_filter", 0], ["panner", 0], ["updated_at", Sun, 16 Mar 2014 00:17:43 UTC +00:00], ["volume", 0], ["wave", 0]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "keys" ("created_at", "delay", "frequency", "key_code", "note_filter", "panner", "updated_at", "volume", "wave") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"  [["created_at", Sun, 16 Mar 2014 00:17:43 UTC +00:00], ["delay", 0], ["frequency", 523.251], ["key_code", 186], ["note_filter", 0], ["panner", 0], ["updated_at", Sun, 16 Mar 2014 00:17:43 UTC +00:00], ["volume", 0], ["wave", 0]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (1.0ms)[0m  [1mUPDATE "keys" SET "keyboard_id" = $1, "updated_at" = $2 WHERE "keys"."id" = 1[0m  [["keyboard_id", 1], ["updated_at", Sun, 16 Mar 2014 00:17:43 UTC +00:00]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  UPDATE "keys" SET "keyboard_id" = $1, "updated_at" = $2 WHERE "keys"."id" = 2  [["keyboard_id", 1], ["updated_at", Sun, 16 Mar 2014 00:17:43 UTC +00:00]]
+  [1m[36m (2.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mUPDATE "keys" SET "keyboard_id" = $1, "updated_at" = $2 WHERE "keys"."id" = 3[0m  [["keyboard_id", 1], ["updated_at", Sun, 16 Mar 2014 00:17:43 UTC +00:00]]
+  [1m[35m (0.8ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  UPDATE "keys" SET "keyboard_id" = $1, "updated_at" = $2 WHERE "keys"."id" = 4  [["keyboard_id", 1], ["updated_at", Sun, 16 Mar 2014 00:17:43 UTC +00:00]]
+  [1m[36m (1.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.8ms)[0m  [1mUPDATE "keys" SET "keyboard_id" = $1, "updated_at" = $2 WHERE "keys"."id" = 5[0m  [["keyboard_id", 1], ["updated_at", Sun, 16 Mar 2014 00:17:43 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  UPDATE "keys" SET "keyboard_id" = $1, "updated_at" = $2 WHERE "keys"."id" = 6  [["keyboard_id", 1], ["updated_at", Sun, 16 Mar 2014 00:17:43 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mUPDATE "keys" SET "keyboard_id" = $1, "updated_at" = $2 WHERE "keys"."id" = 7[0m  [["keyboard_id", 1], ["updated_at", Sun, 16 Mar 2014 00:17:43 UTC +00:00]]
+  [1m[35m (1.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.2ms)[0m  UPDATE "keys" SET "keyboard_id" = $1, "updated_at" = $2 WHERE "keys"."id" = 8  [["keyboard_id", 1], ["updated_at", Sun, 16 Mar 2014 00:17:43 UTC +00:00]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.7ms)[0m  [1mUPDATE "keys" SET "keyboard_id" = $1, "updated_at" = $2 WHERE "keys"."id" = 9[0m  [["keyboard_id", 1], ["updated_at", Sun, 16 Mar 2014 00:17:43 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  UPDATE "keys" SET "keyboard_id" = $1, "updated_at" = $2 WHERE "keys"."id" = 10  [["keyboard_id", 1], ["updated_at", Sun, 16 Mar 2014 00:17:43 UTC +00:00]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mUPDATE "keys" SET "keyboard_id" = $1, "updated_at" = $2 WHERE "keys"."id" = 11[0m  [["keyboard_id", 1], ["updated_at", Sun, 16 Mar 2014 00:17:43 UTC +00:00]]
+  [1m[35m (0.9ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  UPDATE "keys" SET "keyboard_id" = $1, "updated_at" = $2 WHERE "keys"."id" = 12  [["keyboard_id", 1], ["updated_at", Sun, 16 Mar 2014 00:17:43 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (1.1ms)[0m  [1mUPDATE "keys" SET "keyboard_id" = $1, "updated_at" = $2 WHERE "keys"."id" = 13[0m  [["keyboard_id", 1], ["updated_at", Sun, 16 Mar 2014 00:17:43 UTC +00:00]]
+  [1m[35m (0.5ms)[0m  COMMIT
+
+
+Started GET "/keyboards/1" for 127.0.0.1 at 2014-03-15 19:17:54 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (1.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by KeyboardsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mKeyboard Load (1.2ms)[0m  SELECT "keyboards".* FROM "keyboards" WHERE "keyboards"."id" = $1 LIMIT 1  [["id", "1"]]
+  [1m[36mKey Load (7.3ms)[0m  [1mSELECT "keys".* FROM "keys" WHERE "keys"."keyboard_id" = $1[0m  [["keyboard_id", 1]]
+  Rendered keyboards/show.html.erb within layouts/application (127.0ms)
+  Rendered layouts/_navbar.html.erb (26.4ms)
+  Rendered layouts/_messages.html.erb (1.1ms)
+Completed 200 OK in 720ms (Views: 634.9ms | ActiveRecord: 20.6ms)
+
+
+Started GET "/assets/custome.css?body=1" for 127.0.0.1 at 2014-03-15 19:17:55 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-15 19:17:55 -0500
+
+
+Started GET "/assets/keyboards.css?body=1" for 127.0.0.1 at 2014-03-15 19:17:55 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-03-15 19:17:55 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-15 19:17:55 -0500
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-03-15 19:17:55 -0500
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-03-15 19:17:55 -0500
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-03-15 19:17:55 -0500
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-03-15 19:17:55 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-03-15 19:17:55 -0500
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-03-15 19:17:55 -0500
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-03-15 19:17:55 -0500
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-03-15 19:17:55 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-03-15 19:17:55 -0500
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-03-15 19:17:55 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-15 19:17:55 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-03-15 19:17:55 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-03-15 19:17:55 -0500
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-03-15 19:17:55 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-15 19:17:55 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-15 19:17:55 -0500
+
+
+Started GET "/assets/keyboards.js?body=1" for 127.0.0.1 at 2014-03-15 19:17:56 -0500
