@@ -1,11 +1,18 @@
 MyKeyboards::Application.routes.draw do
+  
+  devise_for :users
+
+  resources :users do
+    resources :keyboards
+  end
+
   resources :keyboards do
     resources :keys
   end
 
   root "welcome#index"
 
-  devise_for :users
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
