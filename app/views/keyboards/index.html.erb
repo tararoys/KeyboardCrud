@@ -1,15 +1,6 @@
-<select id="keyboard_selector" name="wave_type" form="wave">
-  <option value="0">Low C</option>
-  <option value="1">Middle C</option>
-  <!-- <option value="2">Sawtooth</option>
-  <option value="3">Triangle</option> -->
-</select>
-
-<div id="keyboard_render">
-
-<%= render 'low_c_keyboard' %>
-
-
-</div>
-
-
+<h2>Pre-Built Keyboards</h2>
+<ol>
+<% @keyboards.each do |k| %>
+  <li><%= link_to "#{k.name}",  keyboard_path(k) %></li>
+<% end %>
+</ol>

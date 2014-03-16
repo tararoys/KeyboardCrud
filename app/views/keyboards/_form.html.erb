@@ -1,5 +1,6 @@
 <%= form_for @keyboard do |f| %>
   <%= f.label :name %>
-  <%= f.text_field :name %>
+  <%= f.text_field :name, autofocus: true %>
   <%= f.submit %> 
 <% end %>
+

@@ -1,38 +1,12 @@
-<h1><%= @keyboard.name %></h1>
-
-<%= link_to "Add a key", new_keyboard_key_path(@keyboard) %>
-
+<h2><%= @keyboard.name %></h2>
+<ul class="options">
+	<li><%= link_to "Edit Keyboard", edit_user_keyboard_path(@owner, @keyboard) %></li>
+	<li></li>
 <div class="row">
-	<% @keyboard.keys.each_with_index do |k, index| %>
-	  <div class="col-xs-12 col-md-3 key">
-	  	<div>Key <%= index + 1 %></div>
-		  <div id="freq-<%= index %>">
-		  	<p>Frequency: <span><%= k.frequency %></span></p>
-		  </div>
-
-		  <div id="wave-<%= index %>">
-		  	<p>Wave: <span><%= k.wave %></span><p>
-		  </div>
-
-		  <div id="panner-<%= index %>">
-		  	<p>Panner: <span><%= k.panner %></span><p>
-		  </div>
-
-		  <div id="delay-<%= index %>">
-		  	<p>Delay: <span><%= k.delay %></span><p>
-		  </div>
-
-		  <div id="filter-<%= index %>">
-		  	<p>Filter: <span><%= k.note_filter %></span><p>
-		  </div>
-
-		  <div id="volume-<%= index %>">
-		  	<p>Volume: <span><%= k.volume %></span><p>
-		  </div>
-
-		  <div id="keycode-<%= index %>">
-		  	<p>Key Code: <span><%= k.key_code %></span><p>
-		  </div>
-		</div>
+	<ul id="keyboard">
+	<% @keys.each_with_index do |k, index| %>
+		<li class="key"><%= render partial: "keys/show", locals: {k: k, index: index} %></li>
 	<% end %>
+</ul>
 </div>
+
