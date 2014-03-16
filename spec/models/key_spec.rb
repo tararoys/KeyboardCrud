@@ -144,6 +144,8 @@ describe Key do
       expect(out_of_range_low.valid?).to eq(false)
     end
 
+    it "keycode can take any unicode keycode value"
+
 
   end
 end
