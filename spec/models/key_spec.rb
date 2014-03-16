@@ -90,9 +90,9 @@ describe Key do
     it "panner is a float between -3 and 3" do
       left_pan           = Key.create(frequency: 261.626, wave: 1, panner: -3.0,  delay: 0.1, note_filter: -1000.00, volume: 0.5, key_code: 62)
       sorta_left_pan     = Key.create(frequency: 4000.00, wave: 1, panner: -2.29, delay: 0.1, note_filter: -1000.00, volume: 0.5, key_code: 63)
-      right_pan          = Key.create(frequency: 60,       wave: 1, panner:  3.0 , delay: 3, note_filter: -1000.00, volume: 0.5, key_code: 64)
+      right_pan          = Key.create(frequency: 60,       wave: 1, panner:  3.0 ,delay: 0.1, note_filter: -1000.00, volume: 0.5, key_code: 64)
       left_out_of_range  = Key.create(frequency: 4000.00, wave: 1, panner: -5.29, delay: 0.1, note_filter: -1000.00, volume: 0.5, key_code: 63)
-      right_out_of_range = Key.create(frequency: 60,       wave: 1, panner:  5,    delay: 3, note_filter: -1000.00, volume: 0.5, key_code: 64)
+      right_out_of_range = Key.create(frequency: 60,       wave: 1, panner:  5,    delay:0.1 , note_filter: -1000.00, volume: 0.5, key_code: 64)
 
       expect(left_pan.valid?).to eq(true)         
       expect(sorta_left_pan.valid?).to eq(true)    
