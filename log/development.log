@@ -43541,3 +43541,1894 @@ Started GET "/assets/keyboards.js?body=1" for 127.0.0.1 at 2014-03-15 19:30:39 -
 
 
 Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-03-15 19:30:39 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-16 11:30:13 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (7.2ms)
+Warning. Error encountered while saving cache 1c0e3de637867fcf205f132bb4fd6614e3e80dcc/custome.css.scssc: can't dump anonymous class #<Class:0x007f93ee409af0>
+Warning. Error encountered while saving cache 3eb1f060d0880243ea8df0a4697e384e8095cbc9/bootstrap.scssc: can't dump anonymous class #<Class:0x007f93ee409af0>
+Warning. Error encountered while saving cache 75bd8f4a99f7d81c86800666790564e4c14b2687/_variables.scssc: can't dump anonymous class #<Class:0x007f93ee409af0>
+Warning. Error encountered while saving cache 75bd8f4a99f7d81c86800666790564e4c14b2687/_mixins.scssc: can't dump anonymous class #<Class:0x007f93ee409af0>
+Warning. Error encountered while saving cache 75bd8f4a99f7d81c86800666790564e4c14b2687/_normalize.scssc: can't dump anonymous class #<Class:0x007f93ee409af0>
+Warning. Error encountered while saving cache 75bd8f4a99f7d81c86800666790564e4c14b2687/_print.scssc: can't dump anonymous class #<Class:0x007f93ee409af0>
+Warning. Error encountered while saving cache 75bd8f4a99f7d81c86800666790564e4c14b2687/_scaffolding.scssc: can't dump anonymous class #<Class:0x007f93ee409af0>
+Warning. Error encountered while saving cache 75bd8f4a99f7d81c86800666790564e4c14b2687/_type.scssc: can't dump anonymous class #<Class:0x007f93ee409af0>
+Warning. Error encountered while saving cache 75bd8f4a99f7d81c86800666790564e4c14b2687/_code.scssc: can't dump anonymous class #<Class:0x007f93ee409af0>
+Warning. Error encountered while saving cache 75bd8f4a99f7d81c86800666790564e4c14b2687/_grid.scssc: can't dump anonymous class #<Class:0x007f93ee409af0>
+Warning. Error encountered while saving cache 75bd8f4a99f7d81c86800666790564e4c14b2687/_tables.scssc: can't dump anonymous class #<Class:0x007f93ee409af0>
+Warning. Error encountered while saving cache 75bd8f4a99f7d81c86800666790564e4c14b2687/_forms.scssc: can't dump anonymous class #<Class:0x007f93ee409af0>
+Warning. Error encountered while saving cache 75bd8f4a99f7d81c86800666790564e4c14b2687/_buttons.scssc: can't dump anonymous class #<Class:0x007f93ee409af0>
+Warning. Error encountered while saving cache 75bd8f4a99f7d81c86800666790564e4c14b2687/_component-animations.scssc: can't dump anonymous class #<Class:0x007f93ee409af0>
+Warning. Error encountered while saving cache 75bd8f4a99f7d81c86800666790564e4c14b2687/_glyphicons.scssc: can't dump anonymous class #<Class:0x007f93ee409af0>
+Warning. Error encountered while saving cache 75bd8f4a99f7d81c86800666790564e4c14b2687/_dropdowns.scssc: can't dump anonymous class #<Class:0x007f93ee409af0>
+Warning. Error encountered while saving cache 75bd8f4a99f7d81c86800666790564e4c14b2687/_button-groups.scssc: can't dump anonymous class #<Class:0x007f93ee409af0>
+Warning. Error encountered while saving cache 75bd8f4a99f7d81c86800666790564e4c14b2687/_input-groups.scssc: can't dump anonymous class #<Class:0x007f93ee409af0>
+Warning. Error encountered while saving cache 75bd8f4a99f7d81c86800666790564e4c14b2687/_navs.scssc: can't dump anonymous class #<Class:0x007f93ee409af0>
+Warning. Error encountered while saving cache 75bd8f4a99f7d81c86800666790564e4c14b2687/_navbar.scssc: can't dump anonymous class #<Class:0x007f93ee409af0>
+Warning. Error encountered while saving cache 75bd8f4a99f7d81c86800666790564e4c14b2687/_breadcrumbs.scssc: can't dump anonymous class #<Class:0x007f93ee409af0>
+Warning. Error encountered while saving cache 75bd8f4a99f7d81c86800666790564e4c14b2687/_pagination.scssc: can't dump anonymous class #<Class:0x007f93ee409af0>
+Warning. Error encountered while saving cache 75bd8f4a99f7d81c86800666790564e4c14b2687/_pager.scssc: can't dump anonymous class #<Class:0x007f93ee409af0>
+Warning. Error encountered while saving cache 75bd8f4a99f7d81c86800666790564e4c14b2687/_labels.scssc: can't dump anonymous class #<Class:0x007f93ee409af0>
+Warning. Error encountered while saving cache 75bd8f4a99f7d81c86800666790564e4c14b2687/_badges.scssc: can't dump anonymous class #<Class:0x007f93ee409af0>
+Warning. Error encountered while saving cache 75bd8f4a99f7d81c86800666790564e4c14b2687/_jumbotron.scssc: can't dump anonymous class #<Class:0x007f93ee409af0>
+Warning. Error encountered while saving cache 75bd8f4a99f7d81c86800666790564e4c14b2687/_thumbnails.scssc: can't dump anonymous class #<Class:0x007f93ee409af0>
+Warning. Error encountered while saving cache 75bd8f4a99f7d81c86800666790564e4c14b2687/_alerts.scssc: can't dump anonymous class #<Class:0x007f93ee409af0>
+Warning. Error encountered while saving cache 75bd8f4a99f7d81c86800666790564e4c14b2687/_progress-bars.scssc: can't dump anonymous class #<Class:0x007f93ee409af0>
+Warning. Error encountered while saving cache 75bd8f4a99f7d81c86800666790564e4c14b2687/_media.scssc: can't dump anonymous class #<Class:0x007f93ee409af0>
+Warning. Error encountered while saving cache 75bd8f4a99f7d81c86800666790564e4c14b2687/_list-group.scssc: can't dump anonymous class #<Class:0x007f93ee409af0>
+Warning. Error encountered while saving cache 75bd8f4a99f7d81c86800666790564e4c14b2687/_panels.scssc: can't dump anonymous class #<Class:0x007f93ee409af0>
+Warning. Error encountered while saving cache 75bd8f4a99f7d81c86800666790564e4c14b2687/_wells.scssc: can't dump anonymous class #<Class:0x007f93ee409af0>
+Warning. Error encountered while saving cache 75bd8f4a99f7d81c86800666790564e4c14b2687/_close.scssc: can't dump anonymous class #<Class:0x007f93ee409af0>
+Warning. Error encountered while saving cache 75bd8f4a99f7d81c86800666790564e4c14b2687/_modals.scssc: can't dump anonymous class #<Class:0x007f93ee409af0>
+Warning. Error encountered while saving cache 75bd8f4a99f7d81c86800666790564e4c14b2687/_tooltip.scssc: can't dump anonymous class #<Class:0x007f93ee409af0>
+Warning. Error encountered while saving cache 75bd8f4a99f7d81c86800666790564e4c14b2687/_popovers.scssc: can't dump anonymous class #<Class:0x007f93ee409af0>
+Warning. Error encountered while saving cache 75bd8f4a99f7d81c86800666790564e4c14b2687/_carousel.scssc: can't dump anonymous class #<Class:0x007f93ee409af0>
+Warning. Error encountered while saving cache 75bd8f4a99f7d81c86800666790564e4c14b2687/_utilities.scssc: can't dump anonymous class #<Class:0x007f93ee409af0>
+Warning. Error encountered while saving cache 75bd8f4a99f7d81c86800666790564e4c14b2687/_responsive-utilities.scssc: can't dump anonymous class #<Class:0x007f93ee409af0>
+  Rendered layouts/_navbar.html.erb (1.4ms)
+  Rendered layouts/_messages.html.erb (0.5ms)
+Completed 200 OK in 2403ms (Views: 2392.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-16 11:30:16 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-16 11:30:16 -0500
+
+
+Started GET "/assets/custome.css?body=1" for 127.0.0.1 at 2014-03-16 11:30:16 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-03-16 11:30:16 -0500
+
+
+Started GET "/assets/keyboards.css?body=1" for 127.0.0.1 at 2014-03-16 11:30:16 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-16 11:30:16 -0500
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-03-16 11:30:16 -0500
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-03-16 11:30:16 -0500
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-03-16 11:30:16 -0500
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-03-16 11:30:16 -0500
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-03-16 11:30:16 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-03-16 11:30:16 -0500
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-03-16 11:30:16 -0500
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-03-16 11:30:16 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-03-16 11:30:16 -0500
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-03-16 11:30:16 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-03-16 11:30:16 -0500
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-03-16 11:30:16 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-03-16 11:30:16 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-16 11:30:16 -0500
+
+
+Started GET "/assets/keyboards.js?body=1" for 127.0.0.1 at 2014-03-16 11:30:16 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-16 11:30:16 -0500
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2014-03-16 11:30:20 -0500
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.erb (1.2ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (30.9ms)
+  Rendered layouts/_navbar.html.erb (0.5ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 74ms (Views: 41.8ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/keyboards/1" for 127.0.0.1 at 2014-03-16 11:30:27 -0500
+Processing by KeyboardsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mKeyboard Load (1.0ms)[0m  SELECT "keyboards".* FROM "keyboards" WHERE "keyboards"."id" = $1 LIMIT 1  [["id", "1"]]
+  [1m[36mKey Load (4.5ms)[0m  [1mSELECT "keys".* FROM "keys" WHERE "keys"."keyboard_id" = $1[0m  [["keyboard_id", 1]]
+  Rendered keyboards/show.html.erb within layouts/application (58.7ms)
+  Rendered layouts/_navbar.html.erb (0.6ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 86ms (Views: 64.0ms | ActiveRecord: 8.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-16 11:30:27 -0500
+
+
+Started GET "/assets/custome.css?body=1" for 127.0.0.1 at 2014-03-16 11:30:27 -0500
+
+
+Started GET "/assets/keyboards.css?body=1" for 127.0.0.1 at 2014-03-16 11:30:27 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-03-16 11:30:27 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-16 11:30:27 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-16 11:30:27 -0500
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-03-16 11:30:27 -0500
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-03-16 11:30:27 -0500
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-03-16 11:30:27 -0500
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-03-16 11:30:27 -0500
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-03-16 11:30:27 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-03-16 11:30:27 -0500
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-03-16 11:30:27 -0500
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-03-16 11:30:27 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-03-16 11:30:27 -0500
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-03-16 11:30:27 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-03-16 11:30:27 -0500
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-03-16 11:30:27 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-03-16 11:30:27 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-16 11:30:27 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-16 11:30:27 -0500
+
+
+Started GET "/keyboards/1" for 127.0.0.1 at 2014-03-16 11:33:09 -0500
+Processing by KeyboardsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mKeyboard Load (0.4ms)[0m  SELECT "keyboards".* FROM "keyboards" WHERE "keyboards"."id" = $1 LIMIT 1  [["id", "1"]]
+  [1m[36mKey Load (0.4ms)[0m  [1mSELECT "keys".* FROM "keys" WHERE "keys"."keyboard_id" = $1[0m  [["keyboard_id", 1]]
+  Rendered keyboards/show.html.erb within layouts/application (4.1ms)
+  Rendered layouts/_navbar.html.erb (0.6ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 34ms (Views: 32.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-16 11:33:09 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-16 11:33:09 -0500
+
+
+Started GET "/assets/custome.css?body=1" for 127.0.0.1 at 2014-03-16 11:33:09 -0500
+
+
+Started GET "/assets/keyboards.css?body=1" for 127.0.0.1 at 2014-03-16 11:33:09 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-16 11:33:09 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-03-16 11:33:09 -0500
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-03-16 11:33:09 -0500
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-03-16 11:33:09 -0500
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-03-16 11:33:09 -0500
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-03-16 11:33:09 -0500
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-03-16 11:33:09 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-03-16 11:33:09 -0500
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-03-16 11:33:09 -0500
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-03-16 11:33:09 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-03-16 11:33:09 -0500
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-03-16 11:33:09 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-03-16 11:33:09 -0500
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-03-16 11:33:09 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-03-16 11:33:09 -0500
+
+
+Started GET "/assets/keyboards.js?body=1" for 127.0.0.1 at 2014-03-16 11:33:09 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-16 11:33:09 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-16 11:33:09 -0500
+
+
+Started GET "/keyboards/1" for 127.0.0.1 at 2014-03-16 11:33:34 -0500
+Processing by KeyboardsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mKeyboard Load (0.3ms)[0m  SELECT "keyboards".* FROM "keyboards" WHERE "keyboards"."id" = $1 LIMIT 1  [["id", "1"]]
+  [1m[36mKey Load (0.4ms)[0m  [1mSELECT "keys".* FROM "keys" WHERE "keys"."keyboard_id" = $1[0m  [["keyboard_id", 1]]
+  Rendered keyboards/show.html.erb within layouts/application (3.9ms)
+  Rendered layouts/_navbar.html.erb (0.5ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 15ms (Views: 13.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-16 11:33:34 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-03-16 11:33:34 -0500
+
+
+Started GET "/assets/custome.css?body=1" for 127.0.0.1 at 2014-03-16 11:33:34 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-16 11:33:34 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-16 11:33:34 -0500
+
+
+Started GET "/assets/keyboards.css?body=1" for 127.0.0.1 at 2014-03-16 11:33:34 -0500
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-03-16 11:33:34 -0500
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-03-16 11:33:34 -0500
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-03-16 11:33:34 -0500
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-03-16 11:33:34 -0500
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-03-16 11:33:34 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-03-16 11:33:34 -0500
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-03-16 11:33:34 -0500
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-03-16 11:33:34 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-03-16 11:33:34 -0500
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-03-16 11:33:34 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-03-16 11:33:34 -0500
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-03-16 11:33:34 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-03-16 11:33:34 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-16 11:33:35 -0500
+
+
+Started GET "/assets/keyboards.js?body=1" for 127.0.0.1 at 2014-03-16 11:33:35 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-16 11:33:35 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-16 11:33:35 -0500
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-03-16 11:33:35 -0500
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-03-16 11:33:35 -0500
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-03-16 11:33:35 -0500
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-03-16 11:33:35 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-03-16 11:33:35 -0500
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-03-16 11:33:35 -0500
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-03-16 11:33:35 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-03-16 11:33:35 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-16 11:33:35 -0500
+
+
+Started GET "/keyboards/1" for 127.0.0.1 at 2014-03-16 11:33:43 -0500
+Processing by KeyboardsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mKeyboard Load (0.4ms)[0m  SELECT "keyboards".* FROM "keyboards" WHERE "keyboards"."id" = $1 LIMIT 1  [["id", "1"]]
+  [1m[36mKey Load (0.5ms)[0m  [1mSELECT "keys".* FROM "keys" WHERE "keys"."keyboard_id" = $1[0m  [["keyboard_id", 1]]
+  Rendered keyboards/show.html.erb within layouts/application (3.9ms)
+  Rendered layouts/_navbar.html.erb (0.5ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 17ms (Views: 14.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-16 11:33:43 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-03-16 11:33:43 -0500
+
+
+Started GET "/assets/custome.css?body=1" for 127.0.0.1 at 2014-03-16 11:33:43 -0500
+
+
+Started GET "/assets/keyboards.css?body=1" for 127.0.0.1 at 2014-03-16 11:33:43 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-16 11:33:43 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-16 11:33:43 -0500
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-03-16 11:33:43 -0500
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-03-16 11:33:43 -0500
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-03-16 11:33:43 -0500
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-03-16 11:33:43 -0500
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-03-16 11:33:43 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-03-16 11:33:43 -0500
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-03-16 11:33:43 -0500
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-03-16 11:33:43 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-03-16 11:33:43 -0500
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-03-16 11:33:43 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-03-16 11:33:43 -0500
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-03-16 11:33:43 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-03-16 11:33:43 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-16 11:33:43 -0500
+
+
+Started GET "/assets/keyboards.js?body=1" for 127.0.0.1 at 2014-03-16 11:33:43 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-16 11:33:43 -0500
+
+
+Started GET "/keyboards/1" for 127.0.0.1 at 2014-03-16 11:34:16 -0500
+Processing by KeyboardsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mKeyboard Load (0.5ms)[0m  SELECT "keyboards".* FROM "keyboards" WHERE "keyboards"."id" = $1 LIMIT 1  [["id", "1"]]
+  [1m[36mKey Load (0.5ms)[0m  [1mSELECT "keys".* FROM "keys" WHERE "keys"."keyboard_id" = $1[0m  [["keyboard_id", 1]]
+  Rendered keyboards/show.html.erb within layouts/application (4.7ms)
+  Rendered layouts/_navbar.html.erb (0.5ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 17ms (Views: 14.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-16 11:34:17 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-16 11:34:17 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-03-16 11:34:17 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-16 11:34:17 -0500
+
+
+Started GET "/assets/custome.css?body=1" for 127.0.0.1 at 2014-03-16 11:34:17 -0500
+
+
+Started GET "/assets/keyboards.css?body=1" for 127.0.0.1 at 2014-03-16 11:34:17 -0500
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-03-16 11:34:17 -0500
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-03-16 11:34:17 -0500
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-03-16 11:34:17 -0500
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-03-16 11:34:17 -0500
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-03-16 11:34:17 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-03-16 11:34:17 -0500
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-03-16 11:34:17 -0500
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-03-16 11:34:17 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-03-16 11:34:17 -0500
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-03-16 11:34:17 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-03-16 11:34:17 -0500
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-03-16 11:34:17 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-03-16 11:34:17 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-16 11:34:17 -0500
+
+
+Started GET "/assets/keyboards.js?body=1" for 127.0.0.1 at 2014-03-16 11:34:17 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-16 11:34:17 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-16 11:34:17 -0500
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-03-16 11:34:17 -0500
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-03-16 11:34:17 -0500
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-03-16 11:34:17 -0500
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-03-16 11:34:17 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-03-16 11:34:17 -0500
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-03-16 11:34:17 -0500
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-03-16 11:34:17 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-03-16 11:34:17 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-16 11:34:17 -0500
+
+
+Started GET "/keyboards/1" for 127.0.0.1 at 2014-03-16 11:34:46 -0500
+Processing by KeyboardsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mKeyboard Load (0.4ms)[0m  SELECT "keyboards".* FROM "keyboards" WHERE "keyboards"."id" = $1 LIMIT 1  [["id", "1"]]
+  [1m[36mKey Load (0.4ms)[0m  [1mSELECT "keys".* FROM "keys" WHERE "keys"."keyboard_id" = $1[0m  [["keyboard_id", 1]]
+  Rendered keyboards/show.html.erb within layouts/application (3.2ms)
+  Rendered layouts/_navbar.html.erb (0.7ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 35ms (Views: 32.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-16 11:34:46 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-03-16 11:34:46 -0500
+
+
+Started GET "/assets/keyboards.css?body=1" for 127.0.0.1 at 2014-03-16 11:34:46 -0500
+
+
+Started GET "/assets/custome.css?body=1" for 127.0.0.1 at 2014-03-16 11:34:46 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-16 11:34:46 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-16 11:34:46 -0500
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-03-16 11:34:46 -0500
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-03-16 11:34:46 -0500
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-03-16 11:34:46 -0500
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-03-16 11:34:46 -0500
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-03-16 11:34:46 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-03-16 11:34:46 -0500
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-03-16 11:34:46 -0500
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-03-16 11:34:46 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-03-16 11:34:46 -0500
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-03-16 11:34:46 -0500
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-03-16 11:34:46 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-03-16 11:34:46 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-03-16 11:34:46 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-16 11:34:46 -0500
+
+
+Started GET "/assets/keyboards.js?body=1" for 127.0.0.1 at 2014-03-16 11:34:46 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-16 11:34:46 -0500
+
+
+Started GET "/keyboards/1" for 127.0.0.1 at 2014-03-16 11:36:01 -0500
+Processing by KeyboardsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mKeyboard Load (0.4ms)[0m  SELECT "keyboards".* FROM "keyboards" WHERE "keyboards"."id" = $1 LIMIT 1  [["id", "1"]]
+  [1m[36mKey Load (0.3ms)[0m  [1mSELECT "keys".* FROM "keys" WHERE "keys"."keyboard_id" = $1[0m  [["keyboard_id", 1]]
+  Rendered keyboards/show.html.erb within layouts/application (3.1ms)
+  Rendered layouts/_navbar.html.erb (0.4ms)
+  Rendered layouts/_messages.html.erb (0.0ms)
+Completed 200 OK in 60ms (Views: 57.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-16 11:36:01 -0500
+
+
+Started GET "/assets/keyboards.css?body=1" for 127.0.0.1 at 2014-03-16 11:36:01 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-03-16 11:36:01 -0500
+
+
+Started GET "/assets/custome.css?body=1" for 127.0.0.1 at 2014-03-16 11:36:01 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-16 11:36:01 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-16 11:36:01 -0500
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-03-16 11:36:01 -0500
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-03-16 11:36:01 -0500
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-03-16 11:36:01 -0500
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-03-16 11:36:01 -0500
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-03-16 11:36:01 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-03-16 11:36:01 -0500
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-03-16 11:36:01 -0500
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-03-16 11:36:01 -0500
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-03-16 11:36:01 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-03-16 11:36:01 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-03-16 11:36:01 -0500
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-03-16 11:36:01 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-03-16 11:36:01 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-16 11:36:01 -0500
+
+
+Started GET "/assets/keyboards.js?body=1" for 127.0.0.1 at 2014-03-16 11:36:01 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-16 11:36:01 -0500
+
+
+Started GET "/keyboards/1" for 127.0.0.1 at 2014-03-16 11:36:52 -0500
+Processing by KeyboardsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mKeyboard Load (0.4ms)[0m  SELECT "keyboards".* FROM "keyboards" WHERE "keyboards"."id" = $1 LIMIT 1  [["id", "1"]]
+  [1m[36mKey Load (0.3ms)[0m  [1mSELECT "keys".* FROM "keys" WHERE "keys"."keyboard_id" = $1[0m  [["keyboard_id", 1]]
+  Rendered keyboards/show.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_navbar.html.erb (0.5ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 32ms (Views: 30.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-16 11:36:52 -0500
+
+
+Started GET "/assets/keyboards.css?body=1" for 127.0.0.1 at 2014-03-16 11:36:52 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-16 11:36:52 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-16 11:36:52 -0500
+
+
+Started GET "/assets/custome.css?body=1" for 127.0.0.1 at 2014-03-16 11:36:52 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-03-16 11:36:52 -0500
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-03-16 11:36:52 -0500
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-03-16 11:36:52 -0500
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-03-16 11:36:52 -0500
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-03-16 11:36:52 -0500
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-03-16 11:36:52 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-03-16 11:36:52 -0500
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-03-16 11:36:52 -0500
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-03-16 11:36:52 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-03-16 11:36:52 -0500
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-03-16 11:36:52 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-03-16 11:36:52 -0500
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-03-16 11:36:52 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-03-16 11:36:52 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-16 11:36:52 -0500
+
+
+Started GET "/assets/keyboards.js?body=1" for 127.0.0.1 at 2014-03-16 11:36:52 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-16 11:36:52 -0500
+
+
+Started GET "/keyboards/1" for 127.0.0.1 at 2014-03-16 11:37:05 -0500
+Processing by KeyboardsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mKeyboard Load (0.3ms)[0m  SELECT "keyboards".* FROM "keyboards" WHERE "keyboards"."id" = $1 LIMIT 1  [["id", "1"]]
+  [1m[36mKey Load (0.3ms)[0m  [1mSELECT "keys".* FROM "keys" WHERE "keys"."keyboard_id" = $1[0m  [["keyboard_id", 1]]
+  Rendered keyboards/show.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_navbar.html.erb (0.5ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 31ms (Views: 29.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-16 11:37:05 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-03-16 11:37:05 -0500
+
+
+Started GET "/assets/keyboards.css?body=1" for 127.0.0.1 at 2014-03-16 11:37:05 -0500
+
+
+Started GET "/assets/custome.css?body=1" for 127.0.0.1 at 2014-03-16 11:37:05 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-16 11:37:05 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-16 11:37:05 -0500
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-03-16 11:37:05 -0500
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-03-16 11:37:05 -0500
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-03-16 11:37:05 -0500
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-03-16 11:37:05 -0500
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-03-16 11:37:05 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-03-16 11:37:05 -0500
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-03-16 11:37:05 -0500
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-03-16 11:37:05 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-03-16 11:37:05 -0500
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-03-16 11:37:05 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-03-16 11:37:05 -0500
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-03-16 11:37:05 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-03-16 11:37:05 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-16 11:37:05 -0500
+
+
+Started GET "/assets/keyboards.js?body=1" for 127.0.0.1 at 2014-03-16 11:37:05 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-16 11:37:05 -0500
+
+
+Started GET "/keyboards/1" for 127.0.0.1 at 2014-03-16 11:37:22 -0500
+Processing by KeyboardsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mKeyboard Load (0.3ms)[0m  SELECT "keyboards".* FROM "keyboards" WHERE "keyboards"."id" = $1 LIMIT 1  [["id", "1"]]
+  [1m[36mKey Load (0.4ms)[0m  [1mSELECT "keys".* FROM "keys" WHERE "keys"."keyboard_id" = $1[0m  [["keyboard_id", 1]]
+  Rendered keyboards/show.html.erb within layouts/application (3.2ms)
+  Rendered layouts/_navbar.html.erb (0.5ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 33ms (Views: 30.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-16 11:37:22 -0500
+
+
+Started GET "/assets/custome.css?body=1" for 127.0.0.1 at 2014-03-16 11:37:22 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-16 11:37:22 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-16 11:37:22 -0500
+
+
+Started GET "/assets/keyboards.css?body=1" for 127.0.0.1 at 2014-03-16 11:37:22 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-03-16 11:37:22 -0500
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-03-16 11:37:22 -0500
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-03-16 11:37:22 -0500
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-03-16 11:37:22 -0500
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-03-16 11:37:22 -0500
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-03-16 11:37:22 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-03-16 11:37:22 -0500
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-03-16 11:37:22 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-03-16 11:37:22 -0500
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-03-16 11:37:22 -0500
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-03-16 11:37:22 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-03-16 11:37:22 -0500
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-03-16 11:37:22 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-03-16 11:37:22 -0500
+
+
+Started GET "/assets/keyboards.js?body=1" for 127.0.0.1 at 2014-03-16 11:37:22 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-16 11:37:22 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-16 11:37:22 -0500
+
+
+Started GET "/assets/keyboards.js?body=1" for 127.0.0.1 at 2014-03-16 11:37:22 -0500
+
+
+Started GET "/keyboards/1" for 127.0.0.1 at 2014-03-16 11:37:32 -0500
+Processing by KeyboardsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mKeyboard Load (0.4ms)[0m  SELECT "keyboards".* FROM "keyboards" WHERE "keyboards"."id" = $1 LIMIT 1  [["id", "1"]]
+  [1m[36mKey Load (0.4ms)[0m  [1mSELECT "keys".* FROM "keys" WHERE "keys"."keyboard_id" = $1[0m  [["keyboard_id", 1]]
+  Rendered keyboards/show.html.erb within layouts/application (3.1ms)
+  Rendered layouts/_navbar.html.erb (0.5ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 60ms (Views: 58.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-16 11:37:32 -0500
+
+
+Started GET "/assets/keyboards.css?body=1" for 127.0.0.1 at 2014-03-16 11:37:32 -0500
+
+
+Started GET "/assets/custome.css?body=1" for 127.0.0.1 at 2014-03-16 11:37:32 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-03-16 11:37:32 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-16 11:37:32 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-16 11:37:32 -0500
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-03-16 11:37:32 -0500
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-03-16 11:37:32 -0500
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-03-16 11:37:32 -0500
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-03-16 11:37:32 -0500
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-03-16 11:37:32 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-03-16 11:37:32 -0500
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-03-16 11:37:32 -0500
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-03-16 11:37:32 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-03-16 11:37:32 -0500
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-03-16 11:37:32 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-03-16 11:37:32 -0500
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-03-16 11:37:32 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-03-16 11:37:32 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-16 11:37:32 -0500
+
+
+Started GET "/assets/keyboards.js?body=1" for 127.0.0.1 at 2014-03-16 11:37:32 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-16 11:37:32 -0500
+
+
+Started GET "/keyboards/1" for 127.0.0.1 at 2014-03-16 11:38:00 -0500
+Processing by KeyboardsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mKeyboard Load (0.4ms)[0m  SELECT "keyboards".* FROM "keyboards" WHERE "keyboards"."id" = $1 LIMIT 1  [["id", "1"]]
+  [1m[36mKey Load (0.4ms)[0m  [1mSELECT "keys".* FROM "keys" WHERE "keys"."keyboard_id" = $1[0m  [["keyboard_id", 1]]
+  Rendered keyboards/show.html.erb within layouts/application (3.3ms)
+  Rendered layouts/_navbar.html.erb (0.5ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 33ms (Views: 30.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-16 11:38:00 -0500
+
+
+Started GET "/assets/keyboards.css?body=1" for 127.0.0.1 at 2014-03-16 11:38:00 -0500
+
+
+Started GET "/assets/custome.css?body=1" for 127.0.0.1 at 2014-03-16 11:38:00 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-03-16 11:38:00 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-16 11:38:00 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-16 11:38:00 -0500
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-03-16 11:38:00 -0500
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-03-16 11:38:00 -0500
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-03-16 11:38:00 -0500
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-03-16 11:38:00 -0500
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-03-16 11:38:00 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-03-16 11:38:00 -0500
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-03-16 11:38:00 -0500
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-03-16 11:38:00 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-03-16 11:38:00 -0500
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-03-16 11:38:00 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-03-16 11:38:00 -0500
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-03-16 11:38:00 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-03-16 11:38:00 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-16 11:38:00 -0500
+
+
+Started GET "/assets/keyboards.js?body=1" for 127.0.0.1 at 2014-03-16 11:38:00 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-16 11:38:00 -0500
+
+
+Started GET "/keyboards/1" for 127.0.0.1 at 2014-03-16 11:38:53 -0500
+Processing by KeyboardsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mKeyboard Load (0.4ms)[0m  SELECT "keyboards".* FROM "keyboards" WHERE "keyboards"."id" = $1 LIMIT 1  [["id", "1"]]
+  [1m[36mKey Load (0.3ms)[0m  [1mSELECT "keys".* FROM "keys" WHERE "keys"."keyboard_id" = $1[0m  [["keyboard_id", 1]]
+  Rendered keyboards/show.html.erb within layouts/application (3.1ms)
+  Rendered layouts/_navbar.html.erb (0.5ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 32ms (Views: 30.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-16 11:38:53 -0500
+
+
+Started GET "/assets/keyboards.css?body=1" for 127.0.0.1 at 2014-03-16 11:38:53 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-03-16 11:38:53 -0500
+
+
+Started GET "/assets/custome.css?body=1" for 127.0.0.1 at 2014-03-16 11:38:53 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-16 11:38:53 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-16 11:38:53 -0500
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-03-16 11:38:53 -0500
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-03-16 11:38:53 -0500
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-03-16 11:38:53 -0500
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-03-16 11:38:53 -0500
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-03-16 11:38:53 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-03-16 11:38:53 -0500
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-03-16 11:38:53 -0500
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-03-16 11:38:53 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-03-16 11:38:53 -0500
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-03-16 11:38:53 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-03-16 11:38:53 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-03-16 11:38:53 -0500
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-03-16 11:38:53 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-16 11:38:53 -0500
+
+
+Started GET "/assets/keyboards.js?body=1" for 127.0.0.1 at 2014-03-16 11:38:53 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-16 11:38:53 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-16 11:38:53 -0500
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-03-16 11:38:53 -0500
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-03-16 11:38:53 -0500
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-03-16 11:38:53 -0500
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-03-16 11:38:53 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-03-16 11:38:53 -0500
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-03-16 11:38:53 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-03-16 11:38:53 -0500
+
+
+Started GET "/assets/keyboards.js?body=1" for 127.0.0.1 at 2014-03-16 11:38:53 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-16 11:38:53 -0500
+
+
+Started GET "/keyboards/1" for 127.0.0.1 at 2014-03-16 11:39:04 -0500
+Processing by KeyboardsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mKeyboard Load (0.4ms)[0m  SELECT "keyboards".* FROM "keyboards" WHERE "keyboards"."id" = $1 LIMIT 1  [["id", "1"]]
+  [1m[36mKey Load (0.4ms)[0m  [1mSELECT "keys".* FROM "keys" WHERE "keys"."keyboard_id" = $1[0m  [["keyboard_id", 1]]
+  Rendered keyboards/show.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_navbar.html.erb (0.5ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 61ms (Views: 58.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-16 11:39:04 -0500
+
+
+Started GET "/assets/custome.css?body=1" for 127.0.0.1 at 2014-03-16 11:39:04 -0500
+
+
+Started GET "/assets/keyboards.css?body=1" for 127.0.0.1 at 2014-03-16 11:39:04 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-16 11:39:04 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-16 11:39:04 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-03-16 11:39:04 -0500
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-03-16 11:39:04 -0500
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-03-16 11:39:04 -0500
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-03-16 11:39:04 -0500
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-03-16 11:39:04 -0500
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-03-16 11:39:04 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-03-16 11:39:04 -0500
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-03-16 11:39:04 -0500
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-03-16 11:39:04 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-03-16 11:39:04 -0500
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-03-16 11:39:04 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-03-16 11:39:04 -0500
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-03-16 11:39:04 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-03-16 11:39:04 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-16 11:39:04 -0500
+
+
+Started GET "/assets/keyboards.js?body=1" for 127.0.0.1 at 2014-03-16 11:39:04 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-16 11:39:04 -0500
+
+
+Started GET "/keyboards/1" for 127.0.0.1 at 2014-03-16 11:39:19 -0500
+Processing by KeyboardsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mKeyboard Load (0.4ms)[0m  SELECT "keyboards".* FROM "keyboards" WHERE "keyboards"."id" = $1 LIMIT 1  [["id", "1"]]
+  [1m[36mKey Load (0.5ms)[0m  [1mSELECT "keys".* FROM "keys" WHERE "keys"."keyboard_id" = $1[0m  [["keyboard_id", 1]]
+  Rendered keyboards/show.html.erb within layouts/application (3.9ms)
+  Rendered layouts/_navbar.html.erb (0.4ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 63ms (Views: 61.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-16 11:39:19 -0500
+
+
+Started GET "/assets/custome.css?body=1" for 127.0.0.1 at 2014-03-16 11:39:19 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-16 11:39:19 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-03-16 11:39:19 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-16 11:39:19 -0500
+
+
+Started GET "/assets/keyboards.css?body=1" for 127.0.0.1 at 2014-03-16 11:39:19 -0500
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-03-16 11:39:19 -0500
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-03-16 11:39:19 -0500
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-03-16 11:39:19 -0500
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-03-16 11:39:19 -0500
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-03-16 11:39:19 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-03-16 11:39:19 -0500
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-03-16 11:39:19 -0500
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-03-16 11:39:19 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-03-16 11:39:19 -0500
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-03-16 11:39:19 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-03-16 11:39:19 -0500
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-03-16 11:39:19 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-03-16 11:39:19 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-16 11:39:19 -0500
+
+
+Started GET "/assets/keyboards.js?body=1" for 127.0.0.1 at 2014-03-16 11:39:19 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-16 11:39:19 -0500
+
+
+Started GET "/keyboards/1" for 127.0.0.1 at 2014-03-16 11:39:57 -0500
+Processing by KeyboardsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mKeyboard Load (0.4ms)[0m  SELECT "keyboards".* FROM "keyboards" WHERE "keyboards"."id" = $1 LIMIT 1  [["id", "1"]]
+  [1m[36mKey Load (0.4ms)[0m  [1mSELECT "keys".* FROM "keys" WHERE "keys"."keyboard_id" = $1[0m  [["keyboard_id", 1]]
+  Rendered keyboards/show.html.erb within layouts/application (3.3ms)
+  Rendered layouts/_navbar.html.erb (0.5ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 32ms (Views: 30.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-16 11:39:57 -0500
+
+
+Started GET "/assets/keyboards.css?body=1" for 127.0.0.1 at 2014-03-16 11:39:57 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-03-16 11:39:57 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-16 11:39:57 -0500
+
+
+Started GET "/assets/custome.css?body=1" for 127.0.0.1 at 2014-03-16 11:39:57 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-16 11:39:57 -0500
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-03-16 11:39:57 -0500
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-03-16 11:39:57 -0500
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-03-16 11:39:57 -0500
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-03-16 11:39:57 -0500
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-03-16 11:39:57 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-03-16 11:39:57 -0500
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-03-16 11:39:57 -0500
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-03-16 11:39:57 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-03-16 11:39:57 -0500
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-03-16 11:39:57 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-03-16 11:39:57 -0500
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-03-16 11:39:57 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-03-16 11:39:57 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-16 11:39:57 -0500
+
+
+Started GET "/assets/keyboards.js?body=1" for 127.0.0.1 at 2014-03-16 11:39:57 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-16 11:39:57 -0500
+
+
+Started GET "/keyboards/1" for 127.0.0.1 at 2014-03-16 11:39:58 -0500
+Processing by KeyboardsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mKeyboard Load (0.4ms)[0m  SELECT "keyboards".* FROM "keyboards" WHERE "keyboards"."id" = $1 LIMIT 1  [["id", "1"]]
+  [1m[36mKey Load (0.4ms)[0m  [1mSELECT "keys".* FROM "keys" WHERE "keys"."keyboard_id" = $1[0m  [["keyboard_id", 1]]
+  Rendered keyboards/show.html.erb within layouts/application (3.1ms)
+  Rendered layouts/_navbar.html.erb (0.4ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 15ms (Views: 13.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-16 11:39:58 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-03-16 11:39:59 -0500
+
+
+Started GET "/assets/custome.css?body=1" for 127.0.0.1 at 2014-03-16 11:39:59 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-16 11:39:59 -0500
+
+
+Started GET "/assets/keyboards.css?body=1" for 127.0.0.1 at 2014-03-16 11:39:59 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-16 11:39:59 -0500
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-03-16 11:39:59 -0500
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-03-16 11:39:59 -0500
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-03-16 11:39:59 -0500
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-03-16 11:39:59 -0500
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-03-16 11:39:59 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-03-16 11:39:59 -0500
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-03-16 11:39:59 -0500
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-03-16 11:39:59 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-03-16 11:39:59 -0500
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-03-16 11:39:59 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-03-16 11:39:59 -0500
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-03-16 11:39:59 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-03-16 11:39:59 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-16 11:39:59 -0500
+
+
+Started GET "/assets/keyboards.js?body=1" for 127.0.0.1 at 2014-03-16 11:39:59 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-16 11:39:59 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-16 11:39:59 -0500
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-03-16 11:39:59 -0500
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-03-16 11:39:59 -0500
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-03-16 11:39:59 -0500
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-03-16 11:39:59 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-03-16 11:39:59 -0500
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-03-16 11:39:59 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-03-16 11:39:59 -0500
+
+
+Started GET "/assets/keyboards.js?body=1" for 127.0.0.1 at 2014-03-16 11:39:59 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-16 11:39:59 -0500
+
+
+Started GET "/keyboards/1" for 127.0.0.1 at 2014-03-16 11:40:48 -0500
+Processing by KeyboardsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mKeyboard Load (0.4ms)[0m  SELECT "keyboards".* FROM "keyboards" WHERE "keyboards"."id" = $1 LIMIT 1  [["id", "1"]]
+  [1m[36mKey Load (0.4ms)[0m  [1mSELECT "keys".* FROM "keys" WHERE "keys"."keyboard_id" = $1[0m  [["keyboard_id", 1]]
+  Rendered keyboards/show.html.erb within layouts/application (4.7ms)
+  Rendered layouts/_navbar.html.erb (0.5ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 17ms (Views: 14.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-16 11:40:48 -0500
+
+
+Started GET "/assets/custome.css?body=1" for 127.0.0.1 at 2014-03-16 11:40:48 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-16 11:40:48 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-03-16 11:40:48 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-16 11:40:48 -0500
+
+
+Started GET "/assets/keyboards.css?body=1" for 127.0.0.1 at 2014-03-16 11:40:48 -0500
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-03-16 11:40:48 -0500
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-03-16 11:40:48 -0500
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-03-16 11:40:48 -0500
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-03-16 11:40:48 -0500
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-03-16 11:40:48 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-03-16 11:40:48 -0500
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-03-16 11:40:48 -0500
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-03-16 11:40:48 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-03-16 11:40:48 -0500
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-03-16 11:40:48 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-03-16 11:40:48 -0500
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-03-16 11:40:48 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-03-16 11:40:48 -0500
+
+
+Started GET "/assets/keyboards.js?body=1" for 127.0.0.1 at 2014-03-16 11:40:48 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-16 11:40:48 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-16 11:40:48 -0500
+
+
+Started GET "/keyboards/1" for 127.0.0.1 at 2014-03-16 11:40:57 -0500
+Processing by KeyboardsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mKeyboard Load (0.4ms)[0m  SELECT "keyboards".* FROM "keyboards" WHERE "keyboards"."id" = $1 LIMIT 1  [["id", "1"]]
+  [1m[36mKey Load (0.4ms)[0m  [1mSELECT "keys".* FROM "keys" WHERE "keys"."keyboard_id" = $1[0m  [["keyboard_id", 1]]
+  Rendered keyboards/show.html.erb within layouts/application (4.0ms)
+  Rendered layouts/_navbar.html.erb (0.5ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 36ms (Views: 33.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-16 11:40:58 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-16 11:40:58 -0500
+
+
+Started GET "/assets/custome.css?body=1" for 127.0.0.1 at 2014-03-16 11:40:58 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-03-16 11:40:58 -0500
+
+
+Started GET "/assets/keyboards.css?body=1" for 127.0.0.1 at 2014-03-16 11:40:58 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-16 11:40:58 -0500
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-03-16 11:40:58 -0500
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-03-16 11:40:58 -0500
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-03-16 11:40:58 -0500
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-03-16 11:40:58 -0500
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-03-16 11:40:58 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-03-16 11:40:58 -0500
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-03-16 11:40:58 -0500
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-03-16 11:40:58 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-03-16 11:40:58 -0500
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-03-16 11:40:58 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-03-16 11:40:58 -0500
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-03-16 11:40:58 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-03-16 11:40:58 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-16 11:40:58 -0500
+
+
+Started GET "/assets/keyboards.js?body=1" for 127.0.0.1 at 2014-03-16 11:40:58 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-16 11:40:58 -0500
+
+
+Started GET "/keyboards/1" for 127.0.0.1 at 2014-03-16 11:42:12 -0500
+Processing by KeyboardsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mKeyboard Load (0.3ms)[0m  SELECT "keyboards".* FROM "keyboards" WHERE "keyboards"."id" = $1 LIMIT 1  [["id", "1"]]
+  [1m[36mKey Load (0.3ms)[0m  [1mSELECT "keys".* FROM "keys" WHERE "keys"."keyboard_id" = $1[0m  [["keyboard_id", 1]]
+  Rendered keyboards/show.html.erb within layouts/application (3.8ms)
+  Rendered layouts/_navbar.html.erb (0.6ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 15ms (Views: 13.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-16 11:42:12 -0500
+
+
+Started GET "/assets/keyboards.css?body=1" for 127.0.0.1 at 2014-03-16 11:42:12 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-16 11:42:12 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-03-16 11:42:12 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-16 11:42:12 -0500
+
+
+Started GET "/assets/custome.css?body=1" for 127.0.0.1 at 2014-03-16 11:42:12 -0500
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-03-16 11:42:12 -0500
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-03-16 11:42:12 -0500
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-03-16 11:42:12 -0500
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-03-16 11:42:12 -0500
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-03-16 11:42:12 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-03-16 11:42:12 -0500
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-03-16 11:42:12 -0500
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-03-16 11:42:12 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-03-16 11:42:12 -0500
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-03-16 11:42:12 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-03-16 11:42:12 -0500
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-03-16 11:42:12 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-03-16 11:42:12 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-16 11:42:12 -0500
+
+
+Started GET "/assets/keyboards.js?body=1" for 127.0.0.1 at 2014-03-16 11:42:12 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-16 11:42:12 -0500
+
+
+Started GET "/keyboards/1" for 127.0.0.1 at 2014-03-16 11:42:34 -0500
+Processing by KeyboardsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mKeyboard Load (0.3ms)[0m  SELECT "keyboards".* FROM "keyboards" WHERE "keyboards"."id" = $1 LIMIT 1  [["id", "1"]]
+  [1m[36mKey Load (0.4ms)[0m  [1mSELECT "keys".* FROM "keys" WHERE "keys"."keyboard_id" = $1[0m  [["keyboard_id", 1]]
+  Rendered keyboards/show.html.erb within layouts/application (4.0ms)
+  Rendered layouts/_navbar.html.erb (0.5ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 16ms (Views: 13.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-16 11:42:34 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-03-16 11:42:34 -0500
+
+
+Started GET "/assets/custome.css?body=1" for 127.0.0.1 at 2014-03-16 11:42:34 -0500
+
+
+Started GET "/assets/keyboards.css?body=1" for 127.0.0.1 at 2014-03-16 11:42:34 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-16 11:42:34 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-16 11:42:34 -0500
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-03-16 11:42:34 -0500
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-03-16 11:42:34 -0500
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-03-16 11:42:34 -0500
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-03-16 11:42:34 -0500
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-03-16 11:42:34 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-03-16 11:42:34 -0500
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-03-16 11:42:34 -0500
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-03-16 11:42:34 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-03-16 11:42:34 -0500
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-03-16 11:42:34 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-03-16 11:42:34 -0500
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-03-16 11:42:34 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-03-16 11:42:34 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-16 11:42:34 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-16 11:42:34 -0500
+
+
+Started GET "/assets/keyboards.js?body=1" for 127.0.0.1 at 2014-03-16 11:42:34 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-16 11:42:34 -0500
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-03-16 11:42:34 -0500
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-03-16 11:42:34 -0500
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-03-16 11:42:34 -0500
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-03-16 11:42:34 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-03-16 11:42:34 -0500
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-03-16 11:42:34 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-03-16 11:42:34 -0500
+
+
+Started GET "/assets/keyboards.js?body=1" for 127.0.0.1 at 2014-03-16 11:42:34 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-16 11:42:34 -0500
