@@ -25,6 +25,14 @@ describe Key do
       key = Key.new(panner: -20)
       expect(key.panner).to eq ( -20 )
     end 
+
+     it "has a delay" do 
+      key = Key.new(delay: 3)
+      expect(key.delay).to eq ( 3 )
+    end 
+
+    it "need to find out if the delay is in seconds or in milliseconds"
+
   end
 end
 
