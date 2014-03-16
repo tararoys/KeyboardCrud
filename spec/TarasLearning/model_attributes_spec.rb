@@ -8,5 +8,8 @@ describe "Tara Learning Stuff" do
 
       it "Can objects exist without being inserted into the database?"
 
+      it "Why does the new command let objects exist without being inserted into the database?"
+    end
+
     end
 end
