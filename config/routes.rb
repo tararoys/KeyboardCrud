@@ -1,14 +1,18 @@
 MyKeyboards::Application.routes.draw do
-  
+
   devise_for :users
 
   resources :users do
     resources :keyboards
   end
 
+  get '/keyboards/select' => 'keyboards#select'
+
   resources :keyboards do
     resources :keys
   end
+
+
 
   root "welcome#index"
 
