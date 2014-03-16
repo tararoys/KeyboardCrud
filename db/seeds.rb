@@ -53,3 +53,34 @@ keyboard.keys << middle_a
 keyboard.keys << a_sharp 
 keyboard.keys << middle_b
 keyboard.keys << tenor_c 
+
+wild = Keyboard.create(name: "Wild_Keyboard")
+
+wild_middle_c = Key.create(frequency: 261.626, wave: 1, panner: -3, delay: 0.1, note_filter: -1000.00, volume: 0.5, key_code: keyCode[:a])
+wild_c_sharp  = Key.create(frequency: 277.183, wave: 1, panner: -3, delay: 0.1, note_filter: -1000.00, volume: 0.5, key_code: keyCode[:w])
+wild_middle_d = Key.create(frequency: 293.665, wave: 1, panner: -3, delay: 0.1, note_filter: -1000.00, volume: 0.5, key_code: keyCode[:s])
+wild_d_sharp  = Key.create(frequency: 311.127, wave: 1, panner: -3, delay: 0.1, note_filter: -1000.00, volume: 0.5, key_code: keyCode[:e])
+wild_middle_e = Key.create(frequency: 329.628, wave: 1, panner: -3, delay: 0.1, note_filter: -1000.00, volume: 0.5, key_code: keyCode[:d])
+
+wild_middle_f = Key.create(frequency: 349.228, wave: 1, panner: -3, delay: 0.1, note_filter: -1000.00, volume: 0.5, key_code: keyCode[:f])
+wild_f_sharp  = Key.create(frequency: 369.994, wave: 1, panner: -3, delay: 0.1, note_filter: -1000.00, volume: 0.5, key_code: keyCode[:t])
+wild_middle_g = Key.create(frequency: 391.995, wave: 1, panner: -3, delay: 0.1, note_filter: -1000.00, volume: 0.5, key_code: keyCode[:j])
+wild_g_sharp  = Key.create(frequency: 415.305, wave: 1, panner: -3, delay: 0.1, note_filter: -1000.00, volume: 0.5, key_code: keyCode[:i])
+wild_middle_a = Key.create(frequency: 440.000, wave: 1, panner: -3, delay: 0.1, note_filter: -1000.00, volume: 0.5, key_code: keyCode[:k])
+wild_a_sharp  = Key.create(frequency: 466.164, wave: 1, panner: -3, delay: 0.1, note_filter: -1000.00, volume: 0.5, key_code: keyCode[:o])
+wild_middle_b = Key.create(frequency: 493.883, wave: 1, panner: -3, delay: 0.1, note_filter: -1000.00, volume: 0.5, key_code: keyCode[:l])
+wild_tenor_c  = Key.create(frequency: 523.251, wave: 1, panner: -3, delay: 0.1, note_filter: -1000.00, volume: 0.5, key_code: keyCode[:semicolon])
+
+wild.keys << wild_middle_c
+wild.keys << wild_c_sharp 
+wild.keys << wild_middle_d
+wild.keys << wild_d_sharp 
+wild.keys << wild_middle_e
+wild.keys << wild_middle_f
+wild.keys << wild_f_sharp 
+wild.keys << wild_middle_g
+wild.keys << wild_g_sharp 
+wild.keys << wild_middle_a
+wild.keys << wild_a_sharp 
+wild.keys << wild_middle_b
+wild.keys << wild_tenor_c 

@@ -3,10 +3,10 @@ class CreateKeys < ActiveRecord::Migration
     create_table :keys do |t|
       t.integer :keyboard_id
       t.float   :frequency
-      t.string  :wave
-      t.integer :panner
-      t.integer :delay
-      t.integer :note_filter
+      t.integer  :wave
+      t.float :panner
+      t.float :delay
+      t.float :note_filter
       t.float   :volume
       t.integer :key_code
 
