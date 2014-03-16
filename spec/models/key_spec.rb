@@ -62,6 +62,15 @@ describe Key do
       expect(key.errors[:volume][0]).to eq("can't be blank");
       expect(key.errors[:key_code][0]).to eq("can't be blank");
     end 
+
+    it "frequency is a floating point number between 50.00 and 5000.00" do 
+      middle_c = Key.create(frequency: 261.626, wave: 1, panner: -3, delay: 0.1, note_filter: -1000.00, volume: 0.5, key_code: 62)
+      earsplitting = Key.create(frequency: 5200.00, wave: 1, panner: -3, delay: 0.1, note_filter: -1000.00, volume: 0.5, key_code: 63)
+      too_low = Key.create(frequency: 0, wave: 1, panner: -3, delay: 0.1, note_filter: -1000.00, volume: 0.5, key_code: 64)
+      expect(middle_c.valid?).to eq(true)
+      expect(earsplitting.valid?).to eq(false)
+      expect(too_low.valid?).to eq(false)
+    end 
   end
 end
 
