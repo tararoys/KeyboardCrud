@@ -9,6 +9,9 @@ describe "Tara Learning Stuff" do
       it "Can objects exist without being inserted into the database?"
 
       it "Why does the new command let objects exist without being inserted into the database?"
+
+      it "how do I test if an attribute is a float?"
+      #http://stackoverflow.com/questions/1034418/determine-if-a-string-is-a-valid-float-value  is not very useful
     end
 
     context "activerecord validations" do
