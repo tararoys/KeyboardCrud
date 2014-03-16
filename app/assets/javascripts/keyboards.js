@@ -107,7 +107,12 @@ $(document).ready(function() {
         new Key(72, 10),//h
         new Key(85, 11),//u
         new Key(74, 12),//j
-        new Key(75, 13)//k
+        new Key(75, 13),//k
+        new Key(79, 14),//o
+        new Key(76, 15),//l
+        new Key(80, 16),//p
+        new Key(186, 17),//;
+        new Key(222, 18)//''
     ]
 
     // console.log(keys);

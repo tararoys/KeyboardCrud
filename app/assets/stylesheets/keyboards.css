@@ -3,15 +3,15 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 div {
-  width: 30px;
-  height:30px;
+  width: 10px;
+  height:20px;
   background: blue;
   /*border: 2px solid black;*/
 }
 
 .whitekey {
   position: relative;
-  top: 100px;
+  top: 20px;
   width: 110px;
   height: 750px;
   background: white;

@@ -8,6 +8,19 @@
   </select>
 </form>
 
+  <select name="wave_selector" id="wave_selector">
+    <option selected="selected">Please select here to make all key tones the same...</option>
+    <option value="0">Sine</option>
+    <option value="1">Square</option>
+    <option value="2">Sawtooth</option>
+    <option value="3">Triangle</option>
+  </select>
+
+  <select name="pan_selector" id="pan_selector">
+    <option selected="selected">Please select here to pan the sound to one side...</option>
+    <option value="0">L</option>
+    <option value="1">R</option>
+  </select>
 
 <div id="keyboard_location">
 </div>
@@ -24,5 +37,52 @@
       $('#keyboard_location').html(serverResponse);
     })
   });//
+
+  $(document).ready(function() {
+
+    $("#wave_selector").change(function() {
+
+        var val = $(this).val();
+
+        if (val == "0") {
+          for (var i = 1; i <= 18; i++) {
+            $("#wave_" + i).html("<option value='0'>Sine</option><option value='1'>Square</option><option value='2'>Sawtooth</option><option value='3'>Triangle</option>")
+          }
+        } else if (val == "1") {
+          for (var i = 1; i <= 18; i++) {
+            $("#wave_" + i).html("<option value='1'>Square</option><option value='0'>Sine</option><option value='2'>Sawtooth</option><option value='3'>Triangle</option>")
+          }
+        } else if (val == "2") {
+          for (var i = 1; i <= 18; i++) {
+            $("#wave_" + i).html("<option value='2'>Sawtooth</option><option value='1'>Square</option><option value='0'>Sine</option><option value='3'>Triangle</option>")
+          }
+        } else if (val == "3") {
+            for (var i = 1; i <= 18; i++) {
+            $("#wave_" + i).html("<option value='3'>Triangle</option><option value='0'>Sine</option><option value='1'>Square</option><option value='2'>Sawtooth</option>")
+          }
+        }
+    });
+
+    $("#pan_selector").change(function() {
+
+        var val = $(this).val();
+
+        if (val == "0") {
+          for (var i = 1; i <= 18; i++) {
+            console.log("here");
+            $("#panner_" + i).attr('value', '-3');
+          }
+        } else if (val == "1") {
+          for (var i = 1; i <= 18; i++) {
+            $("#panner_" + i).attr('value', '3');
+          }
+        }
+    });
+
+  });
+
+
+
+
 
 </script>
