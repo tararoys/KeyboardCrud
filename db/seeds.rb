@@ -22,7 +22,8 @@ keyCode = {
   k: 75,
   l: 76,
   o: 79,
-  semicolon: 186
+  semicolon: 186,
+  g: 71
 } 
 
 middle_c = Key.create(frequency: 261.626, wave: 0, panner: 0, delay: 0, note_filter: 0, volume: 0.5, key_code: keyCode[:a])
@@ -65,6 +66,8 @@ wild_middle_e = Key.create(frequency: 329.628, wave: 1, panner: -3, delay: 0.1, 
 wild_middle_f = Key.create(frequency: 349.228, wave: 1, panner: -3, delay: 0.1, note_filter: -1000.00, volume: 0.5, key_code: keyCode[:f])
 wild_f_sharp  = Key.create(frequency: 369.994, wave: 1, panner: -3, delay: 0.1, note_filter: -1000.00, volume: 0.5, key_code: keyCode[:t])
 wild_middle_g = Key.create(frequency: 391.995, wave: 1, panner: -3, delay: 0.1, note_filter: -1000.00, volume: 0.5, key_code: keyCode[:j])
+wild_middle_g_repeat = Key.create(frequency: 391.995, wave: 1, panner: -3, delay: 0.1, note_filter: -1000.00, volume: 0.5, key_code: keyCode[:g])
+
 wild_g_sharp  = Key.create(frequency: 415.305, wave: 1, panner: -3, delay: 0.1, note_filter: -1000.00, volume: 0.5, key_code: keyCode[:i])
 wild_middle_a = Key.create(frequency: 440.000, wave: 1, panner: -3, delay: 0.1, note_filter: -1000.00, volume: 0.5, key_code: keyCode[:k])
 wild_a_sharp  = Key.create(frequency: 466.164, wave: 1, panner: -3, delay: 0.1, note_filter: -1000.00, volume: 0.5, key_code: keyCode[:o])
@@ -79,6 +82,7 @@ wild.keys << wild_middle_e
 wild.keys << wild_middle_f
 wild.keys << wild_f_sharp 
 wild.keys << wild_middle_g
+wild.keys << wild_middle_g_repeat
 wild.keys << wild_g_sharp 
 wild.keys << wild_middle_a
 wild.keys << wild_a_sharp 
