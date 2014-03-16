@@ -45,6 +45,11 @@ describe Key do
       expect(key.volume).to eq ( 0.5 )
     end
 
+    it "has a keycode" do 
+      key = Key.new(key_code: 32)
+      expect(key.key_code).to eq ( 32 )
+    end
+
   end
 end
 
