@@ -33,6 +33,13 @@ describe Key do
 
     it "need to find out if the delay is in seconds or in milliseconds"
 
+    it "has a node_filter" do 
+      key = Key.new(note_filter: 10)
+      expect(key.note_filter).to eq ( 10 )
+    end
+
+    it "need to find out what a note_filter is and why it is stored as an integer"
+
   end
 end
 
