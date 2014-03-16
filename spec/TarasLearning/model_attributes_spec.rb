@@ -19,8 +19,10 @@ describe "Tara Learning Stuff" do
         expect{Keyboard.create!()}.to raise_error(ActiveRecord::RecordInvalid)
       end
 
-      it "Why does create not raise an error when attempting to insert invalid data into the database?" do
+      xit "Why does create not raise an error when attempting to insert invalid data into the database?" do
         expect{Keyboard.create()}.to raise_error(ActiveRecord::RecordInvalid)
       end
+
     end
 end
+
