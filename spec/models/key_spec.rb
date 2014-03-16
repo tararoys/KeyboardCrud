@@ -14,9 +14,9 @@ describe Key do
       expect(key.frequency).to eq(1000.22)
     end
 
-    it "has a waveform that is a string" do
-      key = Key.new(wave: "0")
-      expect(key.wave).to eq ("0")
+    it "has a waveform that is an integer" do
+      key = Key.new(wave: 0)
+      expect(key.wave).to eq(0)
     end
 
     it "need to decide if we want the wave to be a string or an integer"
@@ -27,15 +27,15 @@ describe Key do
     end 
 
      it "has a delay" do 
-      key = Key.new(delay: 3)
-      expect(key.delay).to eq ( 3 )
+      key = Key.new(delay: 3.0)
+      expect(key.delay).to eq ( 3.0 )
     end 
 
     it "need to find out if the delay is in seconds or in milliseconds"
 
     it "has a node_filter" do 
-      key = Key.new(note_filter: 10)
-      expect(key.note_filter).to eq ( 10 )
+      key = Key.new(note_filter: -4600.000)
+      expect(key.note_filter).to eq ( -4600.000 )
     end
 
     it "need to find out what a note_filter is and why it is stored as an integer"
