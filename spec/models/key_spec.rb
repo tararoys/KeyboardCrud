@@ -103,11 +103,11 @@ describe Key do
     end
 
     it "delay is a float between 0 and 1" do 
-      middle_c = Key.create(frequency: 261.626,  wave: 0, panner: 0, delay:    0, note_filter: 0, volume: 0.5, key_code: "15")
-      c_sharp  = Key.create(frequency: 277.183,  wave: 0, panner: 0, delay:    1, note_filter: 0, volume: 0.5, key_code: "16")
-      middle_d = Key.create(frequency: 293.665,  wave: 0, panner: 0, delay:  0.5, note_filter: 0, volume: 0.5, key_code: "17")
-      d_sharp  = Key.create(frequency: 311.127,  wave: 0, panner: 0, delay:  1.1, note_filter: 0, volume: 0.5, key_code: "18")
-      middle_e = Key.create(frequency: 329.628,  wave: 0, panner: 0, delay: -0.1, note_filter: 0, volume: 0.5, key_code: "19")
+      middle_c = Key.create(frequency: 261.626,  wave: 0, panner: 0, delay:    0, note_filter: 0, volume: 0.5, key_code: 15)
+      c_sharp  = Key.create(frequency: 277.183,  wave: 0, panner: 0, delay:    1, note_filter: 0, volume: 0.5, key_code: 16)
+      middle_d = Key.create(frequency: 293.665,  wave: 0, panner: 0, delay:  0.5, note_filter: 0, volume: 0.5, key_code: 17)
+      d_sharp  = Key.create(frequency: 311.127,  wave: 0, panner: 0, delay:  1.1, note_filter: 0, volume: 0.5, key_code: 18)
+      middle_e = Key.create(frequency: 329.628,  wave: 0, panner: 0, delay: -0.1, note_filter: 0, volume: 0.5, key_code: 19)
 
       expect(middle_c.valid?).to eq(true)
       expect(c_sharp.valid? ).to eq(true)
