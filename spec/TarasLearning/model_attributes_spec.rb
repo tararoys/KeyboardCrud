@@ -11,5 +11,13 @@ describe "Tara Learning Stuff" do
       it "Why does the new command let objects exist without being inserted into the database?"
     end
 
+    context "activerecord validations" do
+      it "Why does create! raise an error when attempting to insert invalid data into the database?" do
+        expect{Keyboard.create!()}.to raise_error(ActiveRecord::RecordInvalid)
+      end
+
+      it "Why does create not raise an error when attempting to insert invalid data into the database?" do
+        expect{Keyboard.create()}.to raise_error(ActiveRecord::RecordInvalid)
+      end
     end
 end
