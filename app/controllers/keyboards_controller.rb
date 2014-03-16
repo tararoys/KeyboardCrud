@@ -4,6 +4,14 @@ class KeyboardsController < ApplicationController
     @keyboards = Keyboard.all
   end
 
+
+  def show
+    @keyboard = Keyboard.find(params[:id])
+    @keys = Key.where(keyboard_id: @keyboard.id).all
+    @owner = User.find(@keyboard.user_id)
+  end
+
+
   def new
     @keyboard = Keyboard.new
   end
@@ -13,17 +21,11 @@ class KeyboardsController < ApplicationController
     
     if @keyboard.save
       flash[:notice] = "New keyboard #{@keyboard.name} successfully created!"
-      redirect_to @keyboard  
+      redirect_to "/users/#{@keyboard.user_id}/keyboards/"
     else
       @errors = @keyboard.errors.messages
       render "new"
     end
-  end
-
-  def show
-    @keyboard = Keyboard.find(params[:id])
-    @keys = Key.where(keyboard_id: @keyboard.id).all
-    @owner = User.find(@keyboard.user_id)
   end
 
   def edit
@@ -37,7 +39,7 @@ class KeyboardsController < ApplicationController
     @keyboard = Keyboard.find(params[:keyboard_id])
     @owner = User.find(@keyboard.user_id)
     @key.update_attributes(key_params)
-    redirect_to("/users/#{@owner.id}/keyboards/#{@keyboard.id}")
+    redirect_to @keyboard 
   end
 
   private

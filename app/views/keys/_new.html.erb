@@ -2,11 +2,9 @@
   <%= @errors %>
 <% end %>
 
-<%= form_for :key, url: edit_user_keyboard_key_path(@owner,@keyboard,@key) do |f| %>
-  <%= f.hidden_field :key_id, value: @key.id %>
-  <%= f.hidden_field :keyboard_id, value: @key.keyboard_id %>
-  <div id="frequency">Frequency: <span></span>
-    <%= f.range_field :frequency, {min: "50", max: "5000", step: "0.1", id: "freq"} %>
+<%= form_for @key, url: new_user_keyboard_key_path(@owner, @keyboard) do |f| %>
+  <div id="frequency">Frequeny: <span></span>
+    <%= f.range_field :frequency, {min: "50", max: "5000", step: "0.1", id: "freq"}%>
   </div>
 
   <div id="wave-type">Wave Type:
@@ -38,5 +36,3 @@
     <%= f.submit %>
   </div>
 <% end %>
-
-=

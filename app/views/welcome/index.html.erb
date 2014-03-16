@@ -1,5 +1,9 @@
 <h1>Welcome to Keyboard</h1>
 
 <% if current_user %>
-  <%= link_to "Add A Keyboard", new_keyboard_path %>
+  <%= link_to "Add A Keyboard", new_user_keyboard_path(current_user) %>
+<% end %>
+
+<% @keyboards.each do |keyboard| %>
+  <p><%= link_to "#{keyboard.name}", user_keyboard_path(keyboard.user_id, keyboard.id) %></p>
 <% end %>

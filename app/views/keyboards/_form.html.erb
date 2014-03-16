@@ -1,4 +1,4 @@
-<%= form_for @keyboard do |f| %>
+<%= form_for @keyboard, url: new_user_keyboard_path(current_user) do |f| %>
   <%= f.label :name %>
   <%= f.text_field :name, autofocus: true %>
   <%= f.submit %> 

@@ -1,6 +1,6 @@
 <h2>Pre-Built Keyboards</h2>
 <ol>
 <% @keyboards.each do |k| %>
-  <li><%= link_to "#{k.name}",  keyboard_path(k) %></li>
+  <li><a href="/users/<%= k.user_id %>/keyboards/<%= k.id %>/"><%= k.name %></a></li>
 <% end %>
 </ol>

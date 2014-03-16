@@ -1,11 +1,15 @@
 <h2><%= @keyboard.name %></h2>
-<ul class="options">
-	<li><%= link_to "Edit Keyboard", edit_user_keyboard_path(@owner, @keyboard) %></li>
-	<li></li>
+
+<p><%= link_to "Add key", new_user_keyboard_key_path(@owner, @keyboard) %></p>
 <div class="row">
 	<ul id="keyboard">
 	<% @keys.each_with_index do |k, index| %>
-		<li class="key"><%= render partial: "keys/show", locals: {k: k, index: index} %></li>
+		<li class="key"><%= render partial: "keys/show", locals: {k: k, index: index} %>
+      <p><%= link_to "Edit key", edit_user_keyboard_key_path(@owner, @keyboard, k) %></p>
+      <p><a href="/users/<%= @owner.id %>/keyboards/<%= @keyboard.id %>/keys/<%= k.id %>/destroy">Delete Key</a></p>
+
+    </li>
+    
 	<% end %>
 </ul>
 </div>
